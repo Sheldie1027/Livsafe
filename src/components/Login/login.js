@@ -188,7 +188,7 @@ class RegisterForm extends React.Component {
   render(){
     return (
 
-      <form method="post" name="userRegistrationForm" className="form"  onSubmit={this.submituserRegistrationForm} >
+      <form action="" name="userRegistrationForm" className="form"  onSubmit={this.submituserRegistrationForm} >
         <label htmlFor="username">username</label>
         <input 
         type="text" 

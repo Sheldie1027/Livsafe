@@ -1,0 +1,23 @@
+
+.home-container{
+    background-color: lawngreen;
+}
+.dropdown{
+    background: #ffffff;
+    position:fixed;
+    left:120px;
+    padding:1px;
+    margin-top: 50px;
+    color:black
+}
+
+input.search{
+    background: #d4d3d3;
+    position:fixed;
+    right:98px;
+    top:82px;
+    font-weight: 400;
+    width: 85px;
+    height: 35px;
+    margin-top: 23px;
+}

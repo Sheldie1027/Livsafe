@@ -1,0 +1,145 @@
+html,body, body * { 
+    box-sizing: border-box; 
+    font-family: 'open sans';
+    margin:0;
+    padding:0;
+    color:inherit;
+    background-color:inherit;
+
+  }
+  
+
+.login-register-container {
+    
+    background-image: url(login1.jpg) ;
+    background-size: cover;
+    background-position: center center;  
+    width:100%;
+    height:100%;
+    position: fixed;
+    padding-top: 60px;
+    padding-bottom: 100px;
+          
+}
+  
+  
+  .login-register-wrapper {
+      height: 560px;
+      width: 500px;
+      margin-top: 30px;
+      margin-left: 80px;
+      margin-right: auto;
+      padding:0 3em;
+      border-radius: 5px;
+      box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+      overflow: hidden; 
+      font-size: 1em;
+      color:#000000;
+      background: linear-gradient(180deg, rgba(10,69,18,1) 0%, rgba(85,255,35,0.8914916308320203) 71%, rgba(255,255,255,0) 95%);
+  }
+  
+  .nav-buttons {
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    opacity: 1;
+    margin-bottom: 3em;
+  }
+  button {
+      font-size: 1.5em;
+      margin-right:1em;
+      border:0px;
+      cursor: pointer;
+   
+  }
+  button:focus {
+      outline: 0px;
+  }
+  button.active {
+    padding-bottom: 10px;
+    border-bottom: 2.5px #0e3d14;
+} 
+
+   .forgot-panel {
+    position: fixed;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top:20px;
+    padding-top: 24px;
+        
+  }
+  
+    .form-group input {
+        width: 100%;
+        height: 35px;
+        padding-left: 15px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: rgba(255,255,255,.5);
+    }
+    .form-group label {
+      text-transform: uppercase;
+    }
+    input.submit {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 8px 0px;
+        width: 100%;
+        height: 33px;
+        border: none;
+        border-radius: 20px;
+        margin-top: 23px;
+        background-color: rgba(35,130,48,1);
+        cursor: pointer;
+        
+    
+    }
+
+    .errormsg {
+        color: #cc0000;
+        margin-bottom: 5px;
+      }
+      
+
+  
+  
+    form#registerform {
+        left:500px;
+        top:-230px;
+        position:relative;
+    }
+  
+    .forgot-panel {
+        margin-top:-375px;
+        color:black;
+        font-size: 20px;
+    }
+  
+    form, .forgot-panel { 
+        position: relative;
+        transition: all .5s ease;
+    }
+    #loginBtn, #registerBtn {
+        transition: all .5s ease;
+  
+    }
+    .welcome{
+        position: fixed;
+        top:330px;
+        right:30px;
+        font-size: 30px;
+        color:whitesmoke;
+    }
+    
+
+    .logo{
+        position: fixed;
+        top:70px;
+        right:240px;
+    }

@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import  {useHistory}  from "react-router-dom";
 import Intro from './intro';
 import "./login.css";
-import axios from 'axios';
+import Axios from 'axios';
 
 
 function Login() {
@@ -71,19 +71,21 @@ function Login() {
   );
 }
 
-function LoginForm() {
+const LoginForm = () => {
+  const history = useHistory();
   
-  const Submit = () => {
-    const history = useHistory();
-    history.push("/medical-videos");
+  const Submit = (event) => {
+    event.preventDefault();
+    history.push("/home");
   };
+  
   return (
     <form>
       <label htmlFor="username" >username</label>
-      <input type="email" id="email" placeholder="Please enter your email"  />
-      <label htmlFor="password" >PASSWORD</label>
+      <input type="username" id="username" placeholder="Please enter your username"  />
+      <label htmlFor="password" >password</label>
       <input type="password" id="password" placeholder="Please enter your password" />
-      <input type="submit" className="submit" value="Sign In" onSubmit={Submit}/>
+      <input type="submit" className="submit" value="Sign In" onClick={Submit}/>
     </form>
   ); 
 }
@@ -114,7 +116,6 @@ class RegisterForm extends React.Component {
   }
 
   submituserRegistrationForm(event) {
-    console.log("here");
     event.preventDefault();
     if (this.validateForm()) {
         let fields = {};
@@ -123,9 +124,8 @@ class RegisterForm extends React.Component {
         fields["mobile"] = "";
         fields["password"] = "";
         this.setState({fields:fields});
-        alert("Form submitted");
-        /*axios.post('http://localhost:4000/app/login', fields)
-        .then(response => console.log(response.data))*/
+        Axios.post('http://localhost:4000/app/login', fields)
+        .then(response => console.log(response.data))
          
     }
        
@@ -198,7 +198,7 @@ class RegisterForm extends React.Component {
   render(){
     return (
 
-      <form action="" name="userRegistrationForm" className="form"  onSubmit={this.submituserRegistrationForm} >
+      <form action="" name="userRegistrationForm" className="form"  onClick={this.submituserRegistrationForm} >
         <label htmlFor="username">username</label>
         <input 
         type="text" 

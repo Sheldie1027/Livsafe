@@ -24,7 +24,7 @@ html,body, body * {
   
   
   .login-register-wrapper {
-      height: 560px;
+      height: 580px;
       width: 500px;
       margin-top: 30px;
       margin-left: 80px;
@@ -103,7 +103,8 @@ html,body, body * {
 
     .errormsg{
         color: #f80a0a;
-        margin-bottom: 10px;
+        margin-top: -10px;
+        
     }
       
     form#registerform {

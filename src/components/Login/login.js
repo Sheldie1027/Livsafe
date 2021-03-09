@@ -73,13 +73,17 @@ function Login() {
 
 function LoginForm() {
   
+  const Submit = () => {
+    const history = useHistory();
+    history.push("/medical-videos");
+  };
   return (
     <form>
       <label htmlFor="username" >username</label>
-      <input type="email" id="email" placeholder="Please enter your email"/>
+      <input type="email" id="email" placeholder="Please enter your email"  />
       <label htmlFor="password" >PASSWORD</label>
-      <input type="password" id="password" placeholder="Please enter your password"/>
-      <input type="submit" className="submit" value="Sign In" />
+      <input type="password" id="password" placeholder="Please enter your password" />
+      <input type="submit" className="submit" value="Sign In" onSubmit={Submit}/>
     </form>
   ); 
 }
@@ -90,14 +94,16 @@ class RegisterForm extends React.Component {
     this.state = {
       fields: {},
       errors: {}
-    }
+    };
+
+    
 
     this.handleChange = this.handleChange.bind(this);
     this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
     
 
   };
-
+  
   handleChange(event) {
     let fields = this.state.fields;
     fields[event.target.name] = event.target.value;
@@ -108,6 +114,7 @@ class RegisterForm extends React.Component {
   }
 
   submituserRegistrationForm(event) {
+    console.log("here");
     event.preventDefault();
     if (this.validateForm()) {
         let fields = {};
@@ -119,6 +126,7 @@ class RegisterForm extends React.Component {
         alert("Form submitted");
         /*axios.post('http://localhost:4000/app/login', fields)
         .then(response => console.log(response.data))*/
+         
     }
        
   }
@@ -141,28 +149,28 @@ class RegisterForm extends React.Component {
       }
     }
 
-    if (!fields["emailid"]) {
+    if (!fields["email"]) {
       formIsValid = false;
-      errors["emailid"] = "*Please enter your email-ID.";
+      errors["email"] = "*Please enter your email-ID.";
     }
-
-    if (typeof fields["emailid"] !== "undefined") {
-      var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-      if (!pattern.test(fields["emailid"])) {
+    
+    const emailv = /\S+@\S+\.\S+/;
+    if (typeof fields["email"] !== "undefined") {
+      if (!emailv.test(fields["email"])) {
         formIsValid = false;
-        errors["emailid"] = "*Please enter valid email-ID.";
+        errors["email"] = "*Please enter valid email-ID.";
       }
     }
 
-    if (!fields["mobileno"]) {
+    if (!fields["mobile"]) {
       formIsValid = false;
-      errors["mobileno"] = "*Please enter your mobile no.";
+      errors["mobile"] = "*Please enter your mobile no.";
     }
 
-    if (typeof fields["mobileno"] !== "undefined") {
-      if (!fields["mobileno"].match(/^[0-9]{10}$/)) {
+    if (typeof fields["mobile"] !== "undefined") {
+      if (!fields["mobile"].match(/^[0-9]{10}$/)) {
         formIsValid = false;
-        errors["mobileno"] = "*Please enter valid mobile no.";
+        errors["mobile"] = "*Please enter valid mobile no.";
       }
     }
 
@@ -172,7 +180,7 @@ class RegisterForm extends React.Component {
     }
 
     if (typeof fields["password"] !== "undefined") {
-      if (!fields["password"].match(/^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%&]).*$/)) {
+      if (fields["password"].length < 6) {
         formIsValid = false;
         errors["password"] = "*Please enter secure and strong password.";
       }
@@ -185,10 +193,12 @@ class RegisterForm extends React.Component {
     return formIsValid;
   }
 
+  
+
   render(){
     return (
 
-      <form method="post" name="userRegistrationForm" className="form"  onSubmit={this.submituserRegistrationForm} >
+      <form action="" name="userRegistrationForm" className="form"  onSubmit={this.submituserRegistrationForm} >
         <label htmlFor="username">username</label>
         <input 
         type="text" 
@@ -196,7 +206,7 @@ class RegisterForm extends React.Component {
         name="username" 
         placeholder="Please enter your username" 
         value={this.state.fields.username} 
-        onChange={this.handleChange}  />
+        onChange={this.handleChange}   />
         <div className="errormsg">{this.state.errors.username}</div>
         <label htmlFor="email">email</label>
         <input 
@@ -214,7 +224,7 @@ class RegisterForm extends React.Component {
         name="mobile" 
         placeholder="Please enter your mobile number" 
         value={this.state.fields.mobile} 
-        onChange={this.handleChange}/>
+        onChange={this.handleChange} />
         <div className="errormsg">{this.state.errors.mobile}</div>
         <label htmlFor="password"> password</label>
         <input 
@@ -232,3 +242,4 @@ class RegisterForm extends React.Component {
 } 
 
 export default Login;
+ 

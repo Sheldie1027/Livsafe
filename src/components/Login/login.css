@@ -101,14 +101,11 @@ html,body, body * {
     
     }
 
-    .errormsg {
-        color: #cc0000;
-        margin-bottom: 5px;
-      }
+    .errormsg{
+        color: #f80a0a;
+        margin-bottom: 10px;
+    }
       
-
-  
-  
     form#registerform {
         left:500px;
         top:-230px;

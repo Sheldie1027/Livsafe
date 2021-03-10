@@ -102,8 +102,10 @@ html,body, body * {
     }
 
     .errormsg{
-        color: #f80a0a;
+        color: #ff0000;
         margin-top: -10px;
+        font-size: 15px;
+        font-weight: bold;
         
     }
       

@@ -1,6 +1,6 @@
 import React, { useState, Component } from "react";
 import { useSpring, animated } from "react-spring";
-import  {useHistory}  from "react-router-dom";
+import {useHistory}  from "react-router-dom";
 import Intro from './intro';
 import "./login.css";
 import Axios from 'axios';
@@ -99,7 +99,7 @@ class RegisterForm extends React.Component {
     };
 
     
-
+    
     this.handleChange = this.handleChange.bind(this);
     this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
     
@@ -124,11 +124,10 @@ class RegisterForm extends React.Component {
         fields["mobile"] = "";
         fields["password"] = "";
         this.setState({fields:fields});
-        Axios.post('http://localhost:4000/app/login', fields)
-        .then(response => console.log(response.data))
-         
+        window.open("/", "_self")
     }
-       
+    
+
   }
 
   validateForm() {
@@ -185,11 +184,13 @@ class RegisterForm extends React.Component {
         errors["password"] = "*Please enter secure and strong password.";
       }
     }
-
+      
     this.setState({
       errors: errors
     });   
-    
+    Axios.post('http://localhost:4000/app/login', fields)
+        .then(response => console.log(response.data));
+
     return formIsValid;
   }
 

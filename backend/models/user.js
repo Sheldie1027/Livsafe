@@ -1,21 +1,24 @@
 const mongoose = require('mongoose')
 
-const livsafeTemplate = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username:{
         type:String,
-        required:true
+        required:true,
+        unique: true
     },
     email:{
         type:String,
-        required:true
+        required:true,
+        unique: true
     },
     mobile:{
         type:String,
         required:true
     },
     password:{
-        type:String,
-        required:true
+        type: String,
+        required: true,
+        minlength: 6
     },
     date:{
         type:Date,
@@ -23,4 +26,4 @@ const livsafeTemplate = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('register',livsafeTemplate)
+module.exports = mongoose.model('user',userSchema)

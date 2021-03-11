@@ -1,6 +1,5 @@
 import React, { useState, Component } from "react";
 import { useSpring, animated } from "react-spring";
-import {useHistory}  from "react-router-dom";
 import Intro from './intro';
 import "./login.css";
 import Axios from 'axios';
@@ -86,6 +85,7 @@ class LoginForm extends React.Component {
   handleChange(event) {
     let fields = this.state.fields;
     fields[event.target.name] = event.target.value;
+    
     this.setState({
       fields
     });
@@ -94,38 +94,39 @@ class LoginForm extends React.Component {
 
   submituserLoginForm(event) {
     event.preventDefault();
-    if (this.validateForm()) {
+    if (this.validateLogin()) {
         let fields = {};
         fields["username"] = "";
         fields["password"] = "";
         this.setState({fields:fields});
-        window.open("/home", "_self");
+        window.open("/home", "_self")
     }
 
   }
 
-  validateForm() {
+  validateLogin() {
+    
     let fields = this.state.fields;
     let errors = {};
     let formIsValid = true;
-
+    
     if (!fields["username"]) {
       formIsValid = false;
       errors["username"] = "*Please enter your username.";
     }
-
+    
     if (typeof fields["username"] !== "undefined") {
       if (!fields["username"].match(/^[a-zA-Z ]*$/)) {
         formIsValid = false;
         errors["username"] = "*Please enter alphabet characters only.";
       }
     }
-
+    
     if (!fields["password"]) {
       formIsValid = false;
       errors["password"] = "*Please enter your password.";
     }
-
+    
     if (typeof fields["password"] !== "undefined") {
       if (fields["password"].length < 6) {
         formIsValid = false;
@@ -140,22 +141,22 @@ class LoginForm extends React.Component {
     return formIsValid;
   }
   
-  render(){
+  render() {
     return (
       <form action="" className="form" onClick={this.submituserLoginForm} >
-        <label htmlFor="username" >username</label>
-        <input type="username" 
+        <label htmlFor="username">username</label>
+        <input type="text" 
         id="username" 
         placeholder="Please enter your username" 
         value={this.state.fields.username} 
         onChange={this.handleChange} />
         <div className="errormsg">{this.state.errors.username}</div>
-        <label htmlFor="password" >password</label>
+        <label htmlFor="password">password</label>
         <input type="password" 
         id="password" 
         placeholder="Please enter your password" 
         value={this.state.fields.password} 
-        onChange={this.handleChange}/>
+        onChange={this.handleChange} />
         <div className="errormsg">{this.state.errors.password}</div>
         <input type="submit" className="submit" value="Sign In" />
       </form>
@@ -263,15 +264,11 @@ class RegisterForm extends React.Component {
     return formIsValid;
   }
 
-  
-
   render(){
     return (
-
       <form action="" name="userRegistrationForm" className="form"  onClick={this.submituserRegistrationForm} >
         <label htmlFor="username">username</label>
-        <input 
-        type="text" 
+        <input type="text" 
         id="username" 
         name="username" 
         placeholder="Please enter your username" 

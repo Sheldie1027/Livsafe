@@ -3,6 +3,8 @@ import { useSpring, animated } from "react-spring";
 import Intro from './intro';
 import "./login.css";
 import Axios from 'axios';
+import LoginForm from './loginform';
+import RegisterForm from './registerform';
 
 
 function Login() {
@@ -70,7 +72,7 @@ function Login() {
   );
 }
 
-class LoginForm extends React.Component {
+/*class LoginForm extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -147,6 +149,7 @@ class LoginForm extends React.Component {
         <label htmlFor="username">username</label>
         <input type="text" 
         id="username" 
+        name="username"
         placeholder="Please enter your username" 
         value={this.state.fields.username} 
         onChange={this.handleChange} />
@@ -154,6 +157,7 @@ class LoginForm extends React.Component {
         <label htmlFor="password">password</label>
         <input type="password" 
         id="password" 
+        name="password"
         placeholder="Please enter your password" 
         value={this.state.fields.password} 
         onChange={this.handleChange} />
@@ -306,7 +310,7 @@ class RegisterForm extends React.Component {
       </form>
     );
   }
-} 
+} */
 
 export default Login;
  

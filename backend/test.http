@@ -1,9 +1,9 @@
-POST http://localhost:4000/app/login
+POST http://localhost:4000/app/registerform
 Content-Type: application/json
 
 {
-    "username":"Abhishek",
-    "email":"abhsihek@gmail.com",
+    "username":"jigarvishwakarma",
+    "email":"jigar@gmail.com",
     "mobile":"9004652265",
-    "password":"abhishek"
+    "password":"jigarv"
 }

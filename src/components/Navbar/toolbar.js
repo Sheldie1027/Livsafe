@@ -15,7 +15,7 @@ const Toolbar = props => (
           <li><a href="/home">Home</a></li>
           <li><a href="/medical-videos">Videos</a></li>
           <li><a href="/hospitals">Emergency</a></li>
-          <li><a href="/">Logout</a></li>
+          <li><button onClick="">Logout</button></li>
         </ul>
       </div>
     </nav>

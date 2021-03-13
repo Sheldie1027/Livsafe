@@ -92,4 +92,31 @@ router.delete("/delete", auth, async (request, response) => {
     }
 });
 
+router.post("/tokenIsValid", async (request, response) => {
+    try{
+        const token = request.header("x-auth-token");
+        if(!token) return response.json(false);
+
+        const verified = jwt.verify(token, process.env.JWT_TOKEN_SECRET);
+        if (!verified) return response.json(false);
+
+        const user = await userSchema.findById(verified.id);
+        if(!user) return response.json(false);
+
+        return response.json(true);
+
+    }
+    catch (err) {
+        response.status(500).json({ error: err.message});
+    }
+});
+
+router.get("/",auth, async (request, response) =>{
+    const user = await userSchema.findById(request.user);
+    response.json({
+        username: user.username,
+        id: user._id
+    });
+});
+
 module.exports = router

@@ -43,11 +43,19 @@
 .toolbar-navigation-items a{
   color:white;
   text-decoration: none;
+  font-size: 17px;
 
 }
+.toolbar-navigation-items button{
+  color:white;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-.toolbar-navigation-items a:hover, 
-.toolbar-navigation-items a:active{
+.toolbar-navigation-items a:hover,
+.toolbar-navigation-items button:hover, 
+.toolbar-navigation-items a:active,
+.toolbar-navigation-items button.active{
   color: #fa923f
 }
 

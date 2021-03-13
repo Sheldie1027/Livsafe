@@ -1,4 +1,6 @@
-import React,{ useState, Component } from "react";
+import React,{ useState, Component, useContext } from "react";
+import UserContext from "../../context/UserContext";
+import Axios from "axios";
 import "./login.css";
 
 class LoginForm extends React.Component {
@@ -12,7 +14,7 @@ class LoginForm extends React.Component {
       this.handleChange = this.handleChange.bind(this);
       this.submituserLoginForm = this.submituserLoginForm.bind(this);
     };
-  
+    
     handleChange(event) {
       let fields = this.state.fields;
       fields[event.target.name] = event.target.value;
@@ -30,6 +32,7 @@ class LoginForm extends React.Component {
           fields["username"] = "";
           fields["password"] = "";
           this.setState({fields:fields});
+          Axios.post("http://localhost:4000/app/loginform");
           window.open("/home", "_self")
       }
   

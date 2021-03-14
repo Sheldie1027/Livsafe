@@ -34,7 +34,15 @@
     font-size: 1.3rem;
 }
 
+.side-drawer button{
+    color: #521751;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
 .side-drawer a:hover,
-.side-drawer a:active{
+.side-drawer button:hover,
+.side-drawer a:active,
+.side-drawer button:active{
     color: #fa923f;
 }

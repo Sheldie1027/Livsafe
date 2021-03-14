@@ -107,6 +107,14 @@ html,body, body * {
         font-size: 15px;
         font-weight: bold;
         
+        
+    }
+
+    .errormessage{
+        color: #fc0000;
+        margin-top: -10px;
+        font-size: 18px;
+        font-weight: bold;
     }
       
     form#registerform {

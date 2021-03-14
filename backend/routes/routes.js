@@ -10,12 +10,12 @@ router.post('/registerform', async (request, response) =>{
     try {
     const {username, email, mobile, password} = request.body;
 
-    if (!username || !email || !mobile || !password)
+    /*if (!username || !email || !mobile || !password)
         return response.status(400).json({ msg: " Not all fields have been filled"});
     if (password.length < 6)
         return response
             .status(400)
-            .json({ msg: "The password needs to be 6 characters or more"});
+            .json({ msg: "The password needs to be 6 characters or more"});*/
     
     const existingUsername = await userSchema.findOne({username: username});
     const existingEmail = await userSchema.findOne({email: email});
@@ -56,11 +56,16 @@ router.post('/loginform', async (request, response) => {
 
         if (!username || !password )
             return response.status(400).json({ msg: "Not all fields have been filled"});
-
+        
+        if (!username.match(/^[a-zA-Z ]*$/))
+            return response.status(400).json({msg : "Please enter alphabet characters only for username"})
         const user = await userSchema.findOne({username : username});
         if(!user)
             return response.status(400).json({ msg: "This username does not exist"});
 
+        if (password.length < 6)
+            return response.status(400).json({ msg: "The password needs to be 6 characters or more"});
+        
         const isMatch = await bcrypt.compare(password, user.password);
         if(!isMatch) return response.status(400).json({ msg: "Invalid password"});
 

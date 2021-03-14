@@ -4,6 +4,7 @@ import Axios from 'axios';
 
 
 
+
 class RegisterForm extends React.Component {
     constructor() {
       super();
@@ -27,7 +28,7 @@ class RegisterForm extends React.Component {
   
     submituserRegistrationForm(event) {
       event.preventDefault();
-      if (this.validateForm()) {
+        if (this.validateForm()) {
           let fields = {};
           fields["username"] = "";
           fields["email"] = "";
@@ -35,9 +36,10 @@ class RegisterForm extends React.Component {
           fields["password"] = "";
           this.setState({fields:fields});
           window.open("/", "_self")
-      }
+        }
       
-  
+      
+   
     }
   
     validateForm() {

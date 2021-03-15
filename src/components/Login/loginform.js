@@ -54,7 +54,7 @@ export default function LoginForm(){
       placeholder="Please enter your password"
       onChange={(e) => setPassword(e.target.value)} />
       {error && <ErrorMsg message = {error} />}
-      <input type="submit" className="submit" value="Sign In" />
+      <button type="submit" className="submit" onClick={submitLoginForm}> Sign In </button>
     </form>
   ); 
     

@@ -10,12 +10,32 @@ router.post('/registerform', async (request, response) =>{
     try {
     const {username, email, mobile, password} = request.body;
 
-    /*if (!username || !email || !mobile || !password)
+    if (!username || !email || !mobile || !password)
         return response.status(400).json({ msg: " Not all fields have been filled"});
+    
+    if(!username.match(/^[a-zA-Z ]*$/)) {
+        return response
+        .status(400)
+        .json({ msg: "Please enter alphabet characters only for username"}); 
+    }
+
+    const emailv = /\S+@\S+\.\S+/;
+    if (!emailv.test (email)) {
+        return response
+        .status(400)
+        .json({ msg: "Please enter valid email-ID"});
+      }
+
+    if (!mobile.match(/^[0-9]{10}$/)) {
+        return response
+        .status(400)
+        .json({ msg: "Please enter valid mobile number"}); 
+    }
+
     if (password.length < 6)
         return response
             .status(400)
-            .json({ msg: "The password needs to be 6 characters or more"});*/
+            .json({ msg: "The password needs to be 6 characters or more"});
     
     const existingUsername = await userSchema.findOne({username: username});
     const existingEmail = await userSchema.findOne({email: email});
@@ -123,5 +143,7 @@ router.get("/",auth, async (request, response) =>{
         id: user._id
     });
 });
+
+
 
 module.exports = router

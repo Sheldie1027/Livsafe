@@ -63,11 +63,11 @@ html,body, body * {
    .forgot-panel {
     position: fixed;
     height: 100px;
+    top: 35px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    top:20px;
-    padding-top: 24px;
+    padding-top: 40px;
         
   }
   
@@ -99,6 +99,23 @@ html,body, body * {
         cursor: pointer;
         
     
+    }
+
+    button.submit {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1em;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 8px 0px;
+        width: 100%;
+        height: 34px;
+        border: none;
+        border-radius: 20px;
+        margin-top: 23px;
+        background-color: rgba(35,130,48,1);
+        cursor: pointer;
+        
     }
 
     .errormsg{

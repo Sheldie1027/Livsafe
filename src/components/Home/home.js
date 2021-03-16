@@ -1,34 +1,35 @@
 import React, {useState} from 'react';
-import {Multiselect} from 'multiselect-react-dropdown';
+import Select from 'react-select';
 import "./home.css";
 import Navbar from "../Navbar/navbar";
 
-
-
-
-
- const HomePage = () => {
+ function HomePage() {
     const data =[
-        {Symptom : "Fever", id:1},
-        {Symptom : "Head-ache", id:2},
-        {Symptom : "Runny-nose", id:3},
-        {Symptom : "Ear-pain", id:4},
-        {Symptom : "Body-pain", id:5},
-        {Symptom : "Cough", id:6}
-    ]
+        {label : "Fever", value:1},
+        {label : "Head-ache", value:2},
+        {label : "Runny-nose", value:3},
+        {label : "Ear-pain", value:4},
+        {label : "Body-pain", value:5},
+        {label : "Cough", value:6}
+    ];
     
-    const [options] = useState(data);
+
+    const [Value, getValue] = useState([]);
     
-    return(
+    const Diagnose =(e) => {
+        getValue(Array.isArray(e)?e.map(x=>x.label ):[]);
+    }
+    return(  
         <div className="home-container">
             <div>
-                <div><Navbar/></div>
-                    <div style={{width:"80%", justifyContent:"center", display:"flex"}} className="dropdown">
-                        <Multiselect options={options} displayValue="Symptom" />
-                        <input type="button" value="Search" className="search" />
-                    </div>
+                <div>
+                    <Navbar/>
+                </div >
+                <Select isMulti options={data} className="dropdown" onChange={Diagnose} placeholder="Select minimum 3 Symptoms"/>
+                <div className="window">
+                    <p>Symptoms selected: {Value+""}</p>
+                </div>
             </div>
-            
         </div>
      )
 

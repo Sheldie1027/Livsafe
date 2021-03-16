@@ -1,23 +1,33 @@
 
-.home-container{
-    background-color: lawngreen;
-}
 .dropdown{
     background: #ffffff;
     position:fixed;
-    left:120px;
+    left:40px;
     padding:1px;
     margin-top: 50px;
-    color:black
+    color:black;
+    width: 82%;
+    
 }
 
-input.search{
+.window {
+    position: fixed;
+    padding: 3em 3em;
+    font-size: 35px;
+}
+
+button.search{
     background: #d4d3d3;
     position:fixed;
-    right:98px;
-    top:82px;
-    font-weight: 400;
-    width: 85px;
-    height: 35px;
+    right:135px;
+    top:84px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
     margin-top: 23px;
+}
+
+.dropdown button:hover{
+    background-color: rgb(138, 216, 247);
 }

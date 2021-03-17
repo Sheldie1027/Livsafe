@@ -1,4 +1,4 @@
-import React,{ useState, Component, useContext } from "react";
+import React,{ useState, Component, useContext, useEffect} from "react";
 import UserContext from "../../context/UserContext";
 import {useHistory} from "react-router-dom";
 import Axios from "axios";
@@ -35,10 +35,13 @@ export default function LoginForm(){
         err.response.data.msg && setError(err.response.data.msg);
       }
     };
-  
-  
 
-   
+    useEffect(() => {
+      if (localStorage.getItem("auth-token")!== null){
+        history.push("/home");
+      }
+    }, []);
+
   return (
     <form className="form" onClick={submitLoginForm}>
       <label htmlFor="username">username</label>

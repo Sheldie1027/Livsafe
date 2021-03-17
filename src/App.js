@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, useHistory, NavLink } from 'react-router-dom';
 import Axios from "axios";
 import Form from './components/Login/form';
 import HomePage from './components/Home/home';
@@ -13,13 +13,16 @@ function App() {
     token: undefined,
     user: undefined,
   });
+  
+  const history = useHistory();
 
   useEffect (() => {
     const checkLoggedIn = async () =>{
       let token = localStorage.getItem("auth-token") 
       if(token === null) {
         localStorage.setItem("auth-token", "");
-        token = ""; 
+        token = "";
+
       }
       const tokenResponse = await Axios.post(
         "http://localhost:4000/app/tokenIsValid",
@@ -35,13 +38,10 @@ function App() {
           token,
           user: userResponse.data,
         });
-       
-      }
-       
+      }  
     };
     
-
-    checkLoggedIn();
+    checkLoggedIn ();
   }, []);
   
   

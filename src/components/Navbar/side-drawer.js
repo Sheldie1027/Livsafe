@@ -17,7 +17,7 @@ const SideDrawer = props => {
             token: undefined,
             user: undefined
         });
-        localStorage.setItem("auth-token", "");
+        localStorage.removeItem("auth-token");
         history.push("/");  
     }
     

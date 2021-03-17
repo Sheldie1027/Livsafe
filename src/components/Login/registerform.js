@@ -1,4 +1,4 @@
-import React,{ useState, Component, useContext } from "react";
+import React,{ useState, Component, useContext, useEffect } from "react";
 import UserContext from "../../context/UserContext";
 import {useHistory} from "react-router-dom";
 import Axios from "axios";
@@ -14,6 +14,13 @@ export default function RegisterForm() {
   const [error, setError] = useState();
   const { setUserData } = useContext( UserContext);
   const history = useHistory();
+  
+  useEffect(() => {
+    if (localStorage.getItem("auth-token")!== null)
+    {
+      history.push("/home")
+    }
+  }, []);
   
   const submitRegistrationForm = async (e) => {
     e.preventDefault();

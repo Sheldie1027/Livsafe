@@ -13,7 +13,7 @@ export default function Toolbar(props) {
             token: undefined,
             user: undefined
         });
-        localStorage.setItem("auth-token", "");
+        localStorage.removeItem("auth-token");
         history.push("/");  
     }
   

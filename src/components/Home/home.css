@@ -1,4 +1,3 @@
-
 .dropdown{
     background: #ffffff;
     position:fixed;
@@ -8,12 +7,20 @@
     color:black;
     width: 82%;
     
+    
 }
 
 .window {
     position: fixed;
+    top: 5em;
     padding: 3em 3em;
-    font-size: 35px;
+    font-size: 25px;
+    
+     
+}
+
+ .window img {
+     padding: 3em 6em;
 }
 
 button.search{

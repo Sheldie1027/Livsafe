@@ -36,11 +36,12 @@ export default function LoginForm(){
       }
     };
 
-    useEffect(() => {
+    /*useEffect(() => {
+      console.log(localStorage.getItem("auth-token"));
       if (localStorage.getItem("auth-token")!== null){
         history.push("/home");
       }
-    }, []);
+    }, []);*/
 
   return (
     <form className="form" onClick={submitLoginForm}>

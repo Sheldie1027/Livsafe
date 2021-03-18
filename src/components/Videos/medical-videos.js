@@ -7,7 +7,7 @@ import Navbar from "../Navbar/navbar";
 function Medicalvideos() {
   
   return (
-    <div>
+    <div className="page">
       <div><Navbar/></div>
       <div className="flexbox-container">
         <div className="flexbox-item flexbox1">

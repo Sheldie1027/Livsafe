@@ -23,11 +23,11 @@
      padding: 3em 6em;
 }
 
-button.search{
+.search button {
     background: #d4d3d3;
     position:fixed;
-    right:135px;
-    top:84px;
+    right:105px;
+    top:87px;
     border-radius: 20px;
     font-size: 20px;
     width: 100px;
@@ -35,6 +35,6 @@ button.search{
     margin-top: 23px;
 }
 
-.dropdown button:hover{
+.search button:hover{
     background-color: rgb(138, 216, 247);
 }

@@ -15,12 +15,12 @@ export default function RegisterForm() {
   const { setUserData } = useContext( UserContext);
   const history = useHistory();
   
-  useEffect(() => {
+  /*useEffect(() => {
     if (localStorage.getItem("auth-token")!== null)
     {
       history.push("/home")
     }
-  }, []);
+  }, []);*/
   
   const submitRegistrationForm = async (e) => {
     e.preventDefault();

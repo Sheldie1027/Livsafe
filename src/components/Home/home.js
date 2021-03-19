@@ -27,9 +27,10 @@ import cold from "./cold.png";
     }
 
     function Display (props){
+        console.log({Value},"here");
         switch(props.value) {
-
-            case ("Fever"&&"Head-ache"&&"Ear-pain") :
+           
+            case ("Fever"&&"Ear-pain"&&"Runny-nose") :
       
               return (<div className="window"><p>Common cold: A common viral infection of the nose and throat.In contrast to the flu, a common cold can be caused by many different types of viruses. 
                   The condition is generally harmless and symptoms usually resolve within two weeks.</p>
@@ -39,7 +40,7 @@ import cold from "./cold.png";
                   Warm baths can also reduce cold and flu symptoms in adults. 
                   Adding Epsom salt and baking soda to the water can reduce body aches. 
                   Adding a few drops of essential oil, such as tea tree, juniper, rosemary, thyme, orange, lavender, or eucalyptus, may also have a soothing effect.</p></div>);
-      
+            
             case 'Ear-pain':
       
               return 'malaria';
@@ -58,7 +59,9 @@ import cold from "./cold.png";
                     <Navbar/>
                 </div >
                 <Select isMulti options={data} className="dropdown" onChange={Diagnose} placeholder="Select minimum 3 Symptoms"/>
-                <div><Display value={"Fever"&&"Head-ache"&&"Ear-pain"} /></div>
+                <div className="search">
+                    <button type="button" onClick={() => Display(Value)}>Search</button>
+                </div>
             </div>
         </div> 
         

@@ -11,12 +11,17 @@
 }
 
 .window {
-    position: fixed;
-    top: 5em;
-    padding: 3em 3em;
+    position: absolute;
+    top: 3em;
+    padding: 3em 4em;
     font-size: 25px;
+    overflow: visible;
     
      
+}
+
+.space{
+    padding: 10px;
 }
 
  .window img {
@@ -25,7 +30,7 @@
 
 .search button {
     background: #d4d3d3;
-    position:fixed;
+    position:absolute;
     right:105px;
     top:87px;
     border-radius: 20px;

@@ -14,21 +14,44 @@
 .window {
     
     position: absolute;
-    top: 6em;
-    padding: 3em 4em;
+    top: 9em;
+    left: 4em;
+    right: 6em;
+    padding: 1em 1em;
     font-size: 25px;
     overflow: visible;
-      
+    overflow-y: hidden;
+    background-color: #e2dfdf;
+    border-radius: 1.5%;      
 }
 
 .space {
     padding: 10px;
 }
 
- .window img { 
-    padding: 3em 10em;
+.window img { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: 50%;
+    border: 2px solid rgb(27, 27, 27);
     
 }
+
+img.Accu{
+    margin-top: 1%;
+    margin-right: 20px;
+    float: left;
+    width:20%;
+}
+
+p.text{
+    margin-top: 1%;
+}
+
+
 
 .search button {
     background: #d4d3d3;

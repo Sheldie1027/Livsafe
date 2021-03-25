@@ -1,6 +1,6 @@
 .dropdown{
     background: #ffffff;
-    position:fixed;
+    position:absolute;
     left:40px;
     padding:1px;
     margin-top: 50px;
@@ -10,6 +10,8 @@
     
     
 }
+
+
 
 .window {
     
@@ -45,12 +47,17 @@ img.Accu{
     margin-right: 20px;
     float: left;
     width:20%;
+    transition: all .2s ease-in-out;
+}
+
+.Accu:hover{
+    transform: scale(1.1);
+
 }
 
 p.text{
     margin-top: 1%;
 }
-
 
 
 .search button {

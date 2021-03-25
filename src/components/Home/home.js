@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import Select from 'react-select';
 import "./home.css";
 import Navbar from "../Navbar/navbar";
-import cold from "./cold.png";
-import migraine from "./migraine.png";
-import accupressure from "./accupressure.png";
+import cold from "./pictures/cold.png";
+import migraine from "./pictures/migraine.png";
+import accupressure from "./pictures/accupressure.png";
+import conjunctivitis from "./pictures/conjunctivitis.png";
 
 
 function HomePage() {
@@ -28,7 +29,14 @@ function HomePage() {
         {label : "Nausea", value:16, category: "cat-1"},
         {label : "Vomiting", value:17, category: "cat-1"},
         {label : "Ringing sensation in your ears", value:18, category: "cat-1"},
-        {label : "Body-pain", value:19, category: "cat-1"},
+        {label : "Dryness of eyes", value:19, category: "cat-1"},
+        {label : "Redness of eyes", value:20, category: "cat-1"},
+        {label : "Itching/Irritation/Tearing of eyes", value:21, category: "cat-1"},
+        {label : "Redness of eyelids", value:22, category: "cat-1"},
+        {label : "Discharge from eyes", value:23, category: "cat-1"},
+        {label : "Crusting around the eyelids", value:24, category: "cat-1"},
+        {label : "Puffy eyes", value:25, category: "cat-1"},
+        {label : "Pain in the eyes", value:26, category: "cat-1"},
     ];
     
 
@@ -129,12 +137,61 @@ function HomePage() {
 
                     </p>
                 </div>
-                    );
+                );
+
+                break;
+
+            case ("Redness of eyes,Itching/Irritation/Tearing of eyes,Discharge from eyes"):
+                setDisplay(
+                <div className="window">
+                    <p>
+                        <h2>Conjunctivitis (pink eye):</h2>
+                        Conjunctivitis, or pink eye, is an irritation or inflammation of the conjunctiva, which covers the white part of the eyeball. 
+                        It can be caused by allergies or a bacterial or viral infection. 
+                        Conjunctivitis can be extremely contagious and is spread by contact with eye secretions from someone who is infected.Symptoms include redness, itching and tearing of the eyes. 
+                        It can also lead to discharge or crusting around the eyes.
+
+                        <br/><br/><b>Other symptoms include: </b>Dryness of eyes, Redness of eyelids, Puffy eyes, Feeling like a foreign body is in the eye(s) or an urge to rub the eye(s),
+                        Congestion, Runny nose, or Sneezing.
+                    </p>
+                    <img src={conjunctivitis} />
+                    <p>
+                        <h2>Home Remedies:</h2>
+                        <div className="space"/>
+                        <h4>Use a cool/warm compress:</h4>
+                        Pinkeye causes inflammation around the eye that can be irritating and even painful. 
+                        Using a cool and damp compress will help reduce inflammation and soothe the eye.
+                        <br/><br/>How to use a compress for pinkeye:
+                        <br/>[1] soak a clean washcloth or hand towel in warm or cool water
+                        <br/>[4] wring out any excess water
+                        <br/>[3] place the damp washcloth over the eye and leave there for a few minutes
+                        <br/>[4] remove the washcloth from the eye and wash your hands immediately
+                        
+                        <br/><br/>People should not reuse washcloths before laundering them in hot water as this can spread the infection or reinfect the eye.
+
+                        <div className="space"/>
+
+                        <h4>Damp cloth clean:</h4>
+                        People who have bacterial pinkeye might notice a thick discharge, or pus, leaking from the eye that it is affecting. 
+                        Pus dries quickly, forming a crust along the edges of the eyelids. 
+                        People may have difficulty opening their eye, especially in the morning after the pus has had time to sit and harden overnight. 
+                        Use a warm, damp cloth to remove pus from around the eye and lashes.
+
+                        <div className="space"/>
+
+                        <h4>Tea bags:</h4>
+                        Placing cooled tea bags on your eyes while they’re closed can be a way to relax and unwind.
+                        Some types of tea have anti-inflammatory, soothing properties. Studies have suggested that green tea, chamomile, rooibos, and black tea all have anti-inflammatory properties. 
+                        Because of this, using tea bags on your eyes could be an effective way to reduce swelling.
+                    </p>
+                </div>
+                    
+                )
 
                 break;
       
             default:
-                setDisplay( <div>kaput</div>);
+                setDisplay( <div className="window">kaput</div>);
       
         }
         return display;

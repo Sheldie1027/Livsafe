@@ -6,6 +6,7 @@ import cold from "./pictures/cold.png";
 import migraine from "./pictures/migraine.png";
 import accupressure from "./pictures/accupressure.png";
 import conjunctivitis from "./pictures/conjunctivitis.png";
+import diarrhea from "./pictures/diarrhea.png";
 
 
 function HomePage() {
@@ -37,6 +38,14 @@ function HomePage() {
         {label : "Crusting around the eyelids", value:24, category: "cat-1"},
         {label : "Puffy eyes", value:25, category: "cat-1"},
         {label : "Pain in the eyes", value:26, category: "cat-1"},
+        {label : "Loose/Watery stools", value:27, category: "cat-1"},
+        {label : "Abdominal cramps", value:28, category: "cat-1"},
+        {label : "Frequent bowel movements", value:29, category: "cat-1"},
+        {label : "Abdominal pain", value:30, category: "cat-1"},
+        {label : "Blood in the stool", value:31, category: "cat-1"},
+        {label : "Mucus in the stool", value:32, category: "cat-1"},
+        {label : "Bloating", value:33, category: "cat-1"},
+        
     ];
     
 
@@ -186,7 +195,35 @@ function HomePage() {
                     </p>
                 </div>
                     
-                )
+                );
+
+                break;
+
+            case ("Loose/Watery stools,Frequent bowel movements,Abdominal pain"):
+                setDisplay(
+                <div className="window">
+                    <p>
+                    <h2>Diarrhea:</h2>
+                    Diarrhea is characterized by loose, watery stools or a frequent need to have a bowel movement. 
+                    It usually lasts a few days and often disappears without any treatment. Diarrhea can be acute or chronic.
+
+                    <br/><br/>Acute diarrhea occurs when the condition lasts for one to two days. 
+                    You might experience diarrhea as a result of a viral or bacterial infection. Other times, it could be due to food poisoning. 
+                    Acute diarrhea is fairly common.
+                    
+                    <br/><br/>Chronic diarrhea refers to diarrhea that lasts for at least four weeks. 
+                    It’s usually the result of an intestinal disease or disorder, such as celiac disease or Crohn’s disease.
+                    </p>
+                    <img src={diarrhea} />
+                    <p>
+                        <h2>Home Remedies:</h2>
+                        <div className="space"/>
+                        <h4>Use a cool/warm compress:</h4>
+                    </p>
+
+                </div>
+
+                );
 
                 break;
       

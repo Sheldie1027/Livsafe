@@ -59,6 +59,9 @@ p.text{
     margin-top: 1%;
 }
 
+h5.note{
+    color:red;
+}
 
 .search button {
     background: #d4d3d3;

@@ -63,6 +63,13 @@ h5.note{
     color:red;
 }
 
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch ;
+}
+
 .search button {
     background: #d4d3d3;
     position:absolute;

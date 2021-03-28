@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Select from 'react-select';
+import ReactPlayer from "react-player";
 import {
     Accordion,
     AccordionItem,
@@ -27,6 +28,8 @@ function HomePage() {
         {label : "Sneezing", value:4, category: "cat-2"},
         {label : "Body-pain", value:5, category: "cat-1"},
         {label : "Cough", value:6, category: "cat-2"},
+        {label : "Dry Cough", value:6, category: "cat-2"},
+        {label : "Loss of taste or smell", value:6, category: "cat-2"},
         {label : "Tiredness", value:7, category: "cat-1"},
         {label : "Throbbing/Frequent headache", value:7, category: "cat-1"},
         {label : "Pain on one side of the head", value:8, category: "cat-1"},
@@ -74,7 +77,7 @@ function HomePage() {
     function Display (){
         var Symptom=Value.toString();
         switch(Symptom){
-            case ("Fever,Runny-nose,Body-pain,Cough"): case ("Fever,Runny-nose,Cough"):
+            case ("Fever,Runny-nose,Body-pain,Cough"): case ("Fever,Runny-nose,Cough"): case("Fever,Dry Cough,Tiredness"):
                 setDisplay (
                 <div className="window">
                     <Accordion allowMultipleExpanded allowZeroExpanded>
@@ -153,15 +156,76 @@ function HomePage() {
                                         In case of serious symptoms, kindly contact your doctor immediately and maintain social-distancing*
                                     </h5>
                                     <div className="space"/>
+                                    
                                     <h2>Home Remedies:</h2>
                                     <div className="space"/>
+                                    <h4>Stay hydrated:</h4>
+                                    Fevers usually cause sweating, which means loss of water from your body. 
+                                    Drink lots of fluids (preferably water or juice and not soda or high sugar beverages that might make you thirstier). 
+                                    Caffeinated beverages are not recommended.
+
+                                    <div className="space"/>
+
+                                    <h4>Rest:</h4>
+                                    Sleep has a huge effect on your body’s ability to rest and recover and it is a vital part of our daily routine. 
+                                    When you’re asleep the body appears rested and relaxed, but it’s actually doing a lot of physical activity to revitalise and repair. 
+                                    The recommended amount of sleep for adults is 7-9 hours a night.When you’re ill, getting enough time for resting and repairing is crucial for making a speedy recovery. 
+                                    Your body needs energy to fight the virus. Just rest up and let your body do its job.
+
+                                    <div className="space"/>
+
+                                    <h4>Drink warm beverages, like tea or broth:</h4>
+                                    These heat up the airways, keep you hydrated and break up any mucus you might have in your throat and upper airway. 
+                                    Drinking warm beverages or soups may help mucous move more quickly. 
+                                    This means that drinking warm beverages may encourage coughing and nose-blowing to be more productive.
+
+                                    <div className="space"/>
+
+                                    <h4>Steam:</h4>
+                                    Steam helps break up mucus so you can expel it more easily. The easiest way to use steam is in the bath or shower. 
+                                    Make your shower as hot as you can handle, step in, then breathe deeply through your mouth and nose.
+                                    The hot water will also help relax muscles that may be tense from coughing. 
+                                    You can also visit a steam room at a gym or spa, if one’s available and you have enough energy. 
+                                    It’s best not to soak in a hot bath if you feel ill or short of breath. 
+                                    <br/><br/>Another steam option involves putting hot water in a bowl, covering your head with a towel, and inhaling the steam. 
+                                    Some people add a mentholated vapor rub to the hot water to help with moving mucus. 
+                                    The bowl-and-towel method can be dangerous, though, because the water could be hotter than you intended, which could cause the steam to burn your airways. 
+                                    Do not stay over the hot water for more than a minute or two at a time, and don’t continue to heat the water.
+
+                                    <div className="space"/>
+
+                                    <h4>Coconut oil pulling:</h4>
+                                    Coconut oil pulling can be one home remedy you can try to lessen your pain and deal with the problem of a sore throat. 
+                                    Coconut oil helps in quashing out the toxins and the germs strengthen immunity as well as clears out nasal passages. 
+                                    Coconut oil is also very soothing on the throat and carries zero side-effects. 
+                                    Having close to two tablespoons of good quality coconut oil regular basis can help your body fight infections and viruses naturally.
+
+                                    <div className="space"/>
+
+                                    <h4>Home-made Lozenges:</h4>
+                                    To treat a sore throat , you could suck on a lozenge. This helps in thinning mucous and relieving the sore throat.
+                                    To make lozenges at home , you could use the following recipe.
+
+                                    <div className="space"/>
+                                    <div className="video"><ReactPlayer url='https://www.youtube.com/watch?v=_kk_NeAbUTY' controls="true"/></div>
                                     
-                                    <h4>Cool It Down:</h4>
+                                    <br/><br/><b>Ingredients:</b>
+                                    <ul>
+                                        <li>1 cup of sugar</li>
+                                        <li>1/2 cup of water</li>
+                                        <li>1 tablespoon of lemon juice</li>
+                                        <li>1 teaspoon of ground ginger</li>
+                                        <li>few cloves</li>
+                                        <li>1 tablespoon of honey</li>
+                                    </ul>
+                                    <br/>For the lozenges, all you need to do is mix all ingredients and boil them for about 20 minutes on low heat. 
+                                    It is ready when it is thick like honey. Then make little drops, and when they are cold and become hard, cover them in powdered sugar. 
+                                    Store the lozenges in a container and use for relieving sore throat and cough.
 
                                 </p>
                             </AccordionItemPanel>
-            </AccordionItem>
-        </Accordion>
+                        </AccordionItem>
+                    </Accordion>
                 </div>
                 );
 

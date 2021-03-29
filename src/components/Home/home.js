@@ -28,38 +28,42 @@ function HomePage() {
         {label : "Sneezing", value:4, category: "cat-2"},
         {label : "Body-pain", value:5, category: "cat-1"},
         {label : "Cough", value:6, category: "cat-2"},
-        {label : "Dry Cough", value:6, category: "cat-2"},
-        {label : "Loss of taste or smell", value:6, category: "cat-2"},
-        {label : "Tiredness", value:7, category: "cat-1"},
-        {label : "Throbbing/Frequent headache", value:7, category: "cat-1"},
-        {label : "Pain on one side of the head", value:8, category: "cat-1"},
-        {label : "Pain in the forehead", value:9, category: "cat-1"},
-        {label : "Headache", value:10, category: "cat-1"},
-        {label : "Sensitivity to light", value:11, category: "cat-1"},
-        {label : "Distorted vision", value:12, category: "cat-1"},
-        {label : "Dizziness", value:13, category: "cat-1"},
-        {label : "Light-headedness", value:14, category: "cat-1"},
-        {label : "Sensitivity to sound", value:15, category: "cat-1"},
-        {label : "Nausea", value:16, category: "cat-1"},
-        {label : "Vomiting", value:17, category: "cat-1"},
-        {label : "Ringing sensation in your ears", value:18, category: "cat-1"},
-        {label : "Dryness of eyes", value:19, category: "cat-1"},
-        {label : "Redness of eyes", value:20, category: "cat-1"},
-        {label : "Itching/Irritation/Tearing of eyes", value:21, category: "cat-1"},
-        {label : "Redness of eyelids", value:22, category: "cat-1"},
-        {label : "Discharge from eyes", value:23, category: "cat-1"},
-        {label : "Crusting around the eyelids", value:24, category: "cat-1"},
-        {label : "Puffy eyes", value:25, category: "cat-1"},
-        {label : "Pain in the eyes", value:26, category: "cat-1"},
-        {label : "Loose/Watery stools", value:27, category: "cat-1"},
-        {label : "Abdominal cramps", value:28, category: "cat-1"},
-        {label : "Frequent bowel movements", value:29, category: "cat-1"},
-        {label : "Abdominal pain", value:30, category: "cat-1"},
-        {label : "Blood in the stool", value:31, category: "cat-1"},
-        {label : "Mucus in the stool", value:32, category: "cat-1"},
-        {label : "Bloating", value:33, category: "cat-1"},
-        
-        
+        {label : "Dry Cough", value:7, category: "cat-2"},
+        {label : "Loss of taste or smell", value:8, category: "cat-2"},
+        {label : "Tiredness", value:9, category: "cat-1"},
+        {label : "Throbbing/Frequent headache", value:10, category: "cat-1"},
+        {label : "Pain on one side of the head", value:11, category: "cat-1"},
+        {label : "Pain in the forehead", value:12, category: "cat-1"},
+        {label : "Headache", value:13, category: "cat-1"},
+        {label : "Sensitivity to light", value:14, category: "cat-1"},
+        {label : "Distorted vision", value:15, category: "cat-1"},
+        {label : "Dizziness", value:16, category: "cat-1"},
+        {label : "Light-headedness", value:17, category: "cat-1"},
+        {label : "Sensitivity to sound", value:18, category: "cat-1"},
+        {label : "Nausea", value:19, category: "cat-1"},
+        {label : "Vomiting", value:20, category: "cat-1"},
+        {label : "Ringing sensation in your ears", value:21, category: "cat-1"},
+        {label : "Dryness of eyes", value:22, category: "cat-1"},
+        {label : "Redness of eyes", value:23, category: "cat-1"},
+        {label : "Itching/Irritation/Tearing of eyes", value:24, category: "cat-1"},
+        {label : "Redness of eyelids", value:25, category: "cat-1"},
+        {label : "Discharge from eyes", value:26, category: "cat-1"},
+        {label : "Crusting around the eyelids", value:27, category: "cat-1"},
+        {label : "Puffy eyes", value:28, category: "cat-1"},
+        {label : "Pain in the eyes", value:29, category: "cat-1"},
+        {label : "Loose/Watery stools", value:30, category: "cat-1"},
+        {label : "Abdominal cramps", value:31, category: "cat-1"},
+        {label : "Frequent bowel movements", value:32, category: "cat-1"},
+        {label : "Abdominal pain", value:33, category: "cat-1"},
+        {label : "Blood in the stool", value:34, category: "cat-1"},
+        {label : "Mucus in the stool", value:35, category: "cat-1"},
+        {label : "Bloating", value:36, category: "cat-1"},
+        {label : "Difficulty passing stool", value:37, category: "cat-1"},
+        {label : "Straining when passing stool", value:38, category: "cat-1"},
+        {label : "Passing less stool than usual", value:39, category: "cat-1"},
+        {label : "Lumpy/Dry or Hard stool", value:40, category: "cat-1"},
+        {label : "Pain and cramping in the abdomen", value:41, category: "cat-1"},
+        {label : "Loss of appetite", value:42, category: "cat-1"},
         
     ];
     
@@ -67,7 +71,6 @@ function HomePage() {
     const [Value, getValue] = useState();
     
     const Diagnose = e => {
-        /*getValue(Array.isArray(e)?e.map(x=>x.label ):[], );*/
         getValue([...new Set(e.map(x => x.label))])
 
     }
@@ -397,10 +400,18 @@ function HomePage() {
 
                 break;
 
-            case (""):
+            case ("Difficulty passing stool,Straining when passing stool,Passing less stool than usual,Lumpy/Dry or Hard stool"):
                 setDisplay(
                     <div className="window">
-                        
+                        <p>
+                            <h2>Constipation:</h2>
+                            Constipation occurs when bowel movements become less frequent and stools become difficult to pass. 
+                            It happens most often due to changes in diet or routine, or due to inadequate intake of fiber.
+                            Having fewer than three bowel movements a week is, technically, the definition of constipation. 
+                            However, how often you “go” varies widely from person to person. 
+                            Some people have bowel movements several times a day while others have them only one to two times a week. 
+                            Whatever your bowel movement pattern is, it’s unique and normal for you – as long as you don’t stray too far from your pattern.
+                        </p>
                     </div>
 
                 );

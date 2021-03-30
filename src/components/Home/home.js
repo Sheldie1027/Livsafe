@@ -17,6 +17,7 @@ import accupressure from "./pictures/accupressure.png";
 import conjunctivitis from "./pictures/conjunctivitis.png";
 import diarrhea from "./pictures/diarrhea.png";
 import covid from "./pictures/covid.png"
+import constipation from "./pictures/constipation.png"
 
 
 function HomePage() {
@@ -64,6 +65,8 @@ function HomePage() {
         {label : "Lumpy/Dry or Hard stool", value:40, category: "cat-1"},
         {label : "Pain and cramping in the abdomen", value:41, category: "cat-1"},
         {label : "Loss of appetite", value:42, category: "cat-1"},
+        
+
         
     ];
     
@@ -412,9 +415,68 @@ function HomePage() {
                             Some people have bowel movements several times a day while others have them only one to two times a week. 
                             Whatever your bowel movement pattern is, it’s unique and normal for you – as long as you don’t stray too far from your pattern.
                         </p>
+                        <img src={constipation} />
+                        <p>
+                            <h2>Home Remedies:</h2>
+                            <div className="space"/>
+                            <h4>Drink more water:</h4>
+                            Drinking enough fluids can also help prevent and treat constipation. 
+                            It can help move food through your digestive system and stop stool from hardening. 
+                            In general, you should aim to drink about nine cups of liquid a day if you’re a woman and 13 cups if you’re a man. 
+                            Also, according to a few studies, sparkling water is found to be more effective than regular tap water for natural constipation relief.
+
+                            <div className="space"/>
+
+                            <h4>Have enough dietary fibre:</h4>
+                            Including dietary fibre in your diet is believed to be the best remedy for constipation. 
+                            This is because increasing fiber intake increases the bulk and consistency of bowel movements, making them easier to pass. 
+                            It also helps them pass through the digestive system more quickly. 
+                            
+                            <br/><br/>There are many different dietary fibers, but in general, they fall into two categories: insoluble fibers and soluble fibers. 
+                            <br/><br/>Insoluble fibers — present in wheat bran, vegetables, and whole grains — add bulk to stools and may help them pass more quickly and easily through the digestive system. 
+                            <br/><br/>Soluble fibers — present in oat bran, barley, nuts, seeds, beans, lentils, and peas, as well as some fruits and vegetables — absorb water and form a gel-like paste, which softens the stools and improves its consistency.
+
+                            <div className="space"/>
+
+                            <h4>Anjeer:</h4>
+                            Also known as figs, anjeer can offer instant constipation relief when soaked in warm water. 
+                            It has a high fibre-content and is highly recommended as well. Anjeer is known to be the best home remedy for constipation in kids. 
+                            Also, you can include it in your daily diet in order to improve your digestive system.
+
+                            <div className="space"/>
+
+                            <h4>Milk and Ghee:</h4>
+                            We have long-known about the benefits that milk and ghee have to offer. 
+                            However, they are also effective home remedies for constipation. 
+                            You can take 1 or 2 teaspoons of ghee in a hot cup of milk and have it during bedtime. 
+                            They act as one of the most effective and natural ways to get rid of constipation.
+
+                            <div className="space"/>
+
+                            <h4>Lemon water:</h4>
+                            Lemon juice contains citric acid that helps stimulate your digestive system and can flush out the toxins from your body as well. 
+                            It proves to be very helpful and acts as a natural constipation relief. 
+                            You can take a glass of water and squeeze fresh lemon juice into it every morning. 
+                            Also, adding lemon to your tea is an ideal home cure for constipation and may even improve long-term digestion.
+
+                            <div className="space"/>
+
+                            <h4>Ginger tea:</h4>
+                            Yes, your “adhrak wali chai” is also one of the ideal home remedies to cure constipation. 
+                            Ginger is known to be a herb that causes the inside of your body to generate more heat. 
+                            The hot water in your ginger tea also helps stimulate digestion and it may offer instant constipation relief as well.
+                        </p>
                     </div>
 
                 );
+
+            break;
+
+            case (""):
+                setDisplay(
+
+                );
+
 
             break;
       

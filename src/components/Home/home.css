@@ -11,8 +11,6 @@
     
 }
 
-
-
 .window {
     
     position: absolute;
@@ -21,10 +19,12 @@
     right: 6em;
     padding: 1em 1em;
     font-size: 25px;
+    font-family: 'Roboto'  !important;
     overflow: visible;
     overflow-y: hidden;
     background-color: #e2dfdf;
-    border-radius: 1.5%;      
+    border-radius: 1.5%;
+    
 }
 
 .space {

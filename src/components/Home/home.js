@@ -18,6 +18,7 @@ import conjunctivitis from "./pictures/conjunctivitis.png";
 import diarrhea from "./pictures/diarrhea.png";
 import covid from "./pictures/covid.png"
 import constipation from "./pictures/constipation.png"
+import keratitis from "./pictures/keratitis.png"
 
 
 function HomePage() {
@@ -65,6 +66,11 @@ function HomePage() {
         {label : "Lumpy/Dry or Hard stool", value:40, category: "cat-1"},
         {label : "Pain and cramping in the abdomen", value:41, category: "cat-1"},
         {label : "Loss of appetite", value:42, category: "cat-1"},
+        {label : "Vision disorder", value:43, category: "cat-1"},
+        {label : "Blurred vision", value:44, category: "cat-1"},
+        {label : "Feeling of something in eye", value:45, category: "cat-1"},
+        
+
         
 
         
@@ -291,7 +297,7 @@ function HomePage() {
                 setDisplay(
                 <div className="window">
                     <p>
-                        <h2>Conjunctivitis (pink eye):</h2>
+                        <h2>Conjunctivitis (Pink Eye):</h2>
                         Conjunctivitis, or pink eye, is an irritation or inflammation of the conjunctiva, which covers the white part of the eyeball. 
                         It can be caused by allergies or a bacterial or viral infection. 
                         Conjunctivitis can be extremely contagious and is spread by contact with eye secretions from someone who is infected.Symptoms include redness, itching and tearing of the eyes. 
@@ -302,16 +308,24 @@ function HomePage() {
                     </p>
                     <img src={conjunctivitis} />
                     <p>
+
+                        <h5 className="note">
+                            *Please note that the following remedies are only meant to alleviate symptoms. To treat conjunctivitis,
+                            you need to get prescribed medication through an ophthalmologist.*
+                        </h5>
+
+                        <div className="space"/>
+
                         <h2>Home Remedies:</h2>
                         <div className="space"/>
                         <h4>Use a cool/warm compress:</h4>
                         Pinkeye causes inflammation around the eye that can be irritating and even painful. 
                         Using a cool and damp compress will help reduce inflammation and soothe the eye.
                         <br/><br/>How to use a compress for pinkeye:
-                        <br/>[1] soak a clean washcloth or hand towel in warm or cool water
+                        <br/>[1] soak a clean wash cloth or hand towel in warm or cool water
                         <br/>[2] wring out any excess water
-                        <br/>[3] place the damp washcloth over the eye and leave there for a few minutes
-                        <br/>[4] remove the washcloth from the eye and wash your hands immediately
+                        <br/>[3] place the damp wash cloth over the eye and leave there for a few minutes
+                        <br/>[4] remove the wash cloth from the eye and wash your hands immediately
                         
                         <br/><br/>People should not reuse washcloths before laundering them in hot water as this can spread the infection or reinfect the eye.
 
@@ -472,8 +486,57 @@ function HomePage() {
 
             break;
 
-            case (""):
+            case ("Redness of eyes,Pain in the eyes,Vision disorder,Blurred vision,Feeling of something in eye"):
                 setDisplay(
+                    <div className="window">
+                        <p>
+                            <h2>Keratitis (Corneal Inflammation):</h2>
+                            Keratitis is an inflammation of the cornea — the clear, dome-shaped tissue on the front of your eye that covers the pupil and iris. 
+                            Keratitis may or may not be associated with an infection. 
+                            Non-infectious keratitis can be caused by a relatively minor injury, by wearing your contact lenses too long or by a foreign body in the eye. 
+                            Infectious keratitis can be caused by bacteria, viruses, fungi and parasites.
+                            
+                            <br/>With prompt attention, mild to moderate cases of keratitis can usually be effectively treated without loss of vision. 
+                            If left untreated, or if an infection is severe, keratitis can lead to serious complications that may permanently damage your vision.
+
+                            <br/><br/><b>Other symptoms include: </b>Excess tears or other discharge from your eye, Difficulty opening your eyelid because of pain or irritation,
+                             Decreased vision, Sensitivity to light (photophobia).
+                        </p>
+                        <img src={keratitis} />
+                        <p>
+                            <h5 className="note">
+                                *Please note that the following remedies are only meant to alleviate symptoms. To treat keratitis,
+                                you need to get prescribed medication through an ophthalmologist.*
+                            </h5>
+
+                            <div className="space"/>
+
+                            <h2>Home Remedies:</h2>
+                            <div className="space"/>
+                            <h4>Warm compress:</h4>
+                            Warm compress helps to soothe infected, irritated and sore eyes.
+                            Soak a cloth in warm water and gently press it to your eye for 2-3 minutes, repeat this several times in a day to soothe eye irritation. 
+                            Always use a clean cloth and make sure that water is not too hot, so you don’t burn yourself.
+
+                            <div className="space"/>
+
+                            <h4>Cold compress:</h4>
+                            Like warm compresses, cold compresses don’t exactly cure eye infections. 
+                            They can, however, ease the discomfort associated with certain eye diseases. 
+                            Cold compresses can reduce swelling in the case of eye injuries and infections.
+                            
+                            <div className="space"/>
+
+                            <h4>Tea bags:</h4>
+                            Placing cooled tea bags on your eyes while they’re closed can be a way to relax and unwind.
+                            Some types of tea have anti-inflammatory, soothing properties. Studies have suggested that green tea, chamomile, rooibos, and black tea all have anti-inflammatory properties. 
+                            Because of this, using tea bags on your eyes could be an effective way to reduce swelling.
+
+
+                        </p>
+
+
+                    </div>
 
                 );
 

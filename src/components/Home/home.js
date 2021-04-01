@@ -16,9 +16,12 @@ import migraine from "./pictures/migraine.png";
 import accupressure from "./pictures/accupressure.png";
 import conjunctivitis from "./pictures/conjunctivitis.png";
 import diarrhea from "./pictures/diarrhea.png";
-import covid from "./pictures/covid.png"
-import constipation from "./pictures/constipation.png"
-import keratitis from "./pictures/keratitis.png"
+import covid from "./pictures/covid.png";
+import constipation from "./pictures/constipation.png";
+import keratitis from "./pictures/keratitis.png";
+import dengue from "./pictures/dengue.png";
+import chikungunya from "./pictures/chikungunya.png";
+import HFMD from "./pictures/HFMD.png";
 
 
 function HomePage() {
@@ -32,7 +35,7 @@ function HomePage() {
         {label : "Cough", value:6, category: "cat-2"},
         {label : "Dry Cough", value:7, category: "cat-2"},
         {label : "Loss of taste or smell", value:8, category: "cat-2"},
-        {label : "Tiredness", value:9, category: "cat-1"},
+        {label : "Tiredness/Fatigue", value:9, category: "cat-1"},
         {label : "Throbbing/Frequent headache", value:10, category: "cat-1"},
         {label : "Pain on one side of the head", value:11, category: "cat-1"},
         {label : "Pain in the forehead", value:12, category: "cat-1"},
@@ -69,6 +72,16 @@ function HomePage() {
         {label : "Vision disorder", value:43, category: "cat-1"},
         {label : "Blurred vision", value:44, category: "cat-1"},
         {label : "Feeling of something in eye", value:45, category: "cat-1"},
+        {label : "Back pain", value:46, category: "cat-1"},
+        {label : "Pain in Bones/Joints/Muscles", value:47, category: "cat-1"},
+        {label : "Rashes or Red spots", value:48, category: "cat-1"},
+        {label : "Chills", value:49, category: "cat-1"},
+        {label : "Easy bruising", value:50, category: "cat-1"},
+        {label : "Pain while swallowing", value:51, category: "cat-1"},
+        {label : "Dehydration", value:52, category: "cat-1"},
+        {label : "Malaise", value:53, category: "cat-1"},
+        {label : "Canker sores", value:54, category: "cat-1"},
+        {label : "Sore throat", value:55, category: "cat-1"}
         
 
         
@@ -95,7 +108,7 @@ function HomePage() {
                     <Accordion allowMultipleExpanded allowZeroExpanded>
                         <AccordionItem>
                             <AccordionItemHeading>
-                                <AccordionItemButton> Common cold </AccordionItemButton>
+                                <AccordionItemButton>Common cold </AccordionItemButton>
                             </AccordionItemHeading >
                             <AccordionItemPanel>
                                 <p>
@@ -531,17 +544,242 @@ function HomePage() {
                             Placing cooled tea bags on your eyes while they’re closed can be a way to relax and unwind.
                             Some types of tea have anti-inflammatory, soothing properties. Studies have suggested that green tea, chamomile, rooibos, and black tea all have anti-inflammatory properties. 
                             Because of this, using tea bags on your eyes could be an effective way to reduce swelling.
-
-
                         </p>
-
-
                     </div>
 
                 );
 
+            break;
+
+            case ("Fever,Headache,Rashes or Red spots,Pain in Bones/Joints/Muscles,Nausea,Vomiting"):
+                setDisplay(
+                    <div className="window">
+                        <Accordion allowMultipleExpanded allowZeroExpanded>
+                            <AccordionItem>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton> Dengue Fever </AccordionItemButton>
+                                </AccordionItemHeading >
+                                <AccordionItemPanel>
+                                    <p>
+                                        <h2>Dengue Fever</h2>
+                                        Dengue is a mosquito-borne viral infection.
+                                        The virus responsible for causing dengue, is called dengue virus (DENV). 
+                                        There are four DENV serotypes, meaning that it is possible to be infected four times.
+                                        Severe dengue is a leading cause of serious illness and death in some Asian and Latin American countries. 
+                                        It requires management by medical professionals.
+                                        While many DENV infections produce only mild illness, DENV can cause an acute flu-like illness. 
+
+                                        <br/><br/>Occasionally this develops into a potentially lethal complication, called severe dengue.
+                                        There is no specific treatment for dengue/severe dengue. 
+                                        Early detection of disease progression associated with severe dengue, and access to proper medical care lowers fatality rates of severe dengue to below 1%.
+
+                                        <br/><br/><b>In case of Severe Dengue, symptoms include: </b>Belly pain/tenderness, Vomiting (at least 3 times in 24 hours), 
+                                        Bleeding from the nose or gums, Vomiting blood, Blood in the stool, Feeling tired/restless or irritable.
+                                    </p>
+                                    <img src={dengue} className="dengue"/>
+                                    <p>
+                                        <h5 className="note">
+                                        *Please note that the following remedies are only meant to alleviate symptoms. Incase of Severe Dengue, rush
+                                        to the nearest hospital for medical attention.*
+                                        </h5>
+
+                                        <div className="space"/>
+                            
+                                        <h2>Home Remedies:</h2>
+                                        <div className="space"/>
+                                        <h4>Papaya Leaves:</h4>
+                                        Papaya leaves are beneficial if you want to increase your platelet count. 
+                                        In dengue fever, the platelet count decreases and can lead to complications. 
+                                        They are rich in vitamin C and antioxidants that reduce stress on the body. 
+                                        They also reduce other symptoms like chills, body ache nausea, and fatigue. 
+                                        Crush the leave and take out the juice. About two tablespoons should be had daily.
+
+                                        <div className="space"/>
+                            
+                                        <h4>Orange Juice:</h4>
+                                        Citrus fruits are very beneficial when suffering from dengue fever. 
+                                        Vitamin C present in these fruits, especially organges and orange juice, helps improve immunity, detoxifies the body, initiates cell repair, and combats infections.
+
+                                        <div className="space"/>
+
+                                        <h4> Giloy(Guduchi) juice:</h4>
+                                        Giloy juice is a well-known remedy for dengue fever. 
+                                        Giloy juice improves metabolism and builds immunity. 
+                                        Strong immunity helps in fighting dengue fever effectively. 
+                                        It helps in increasing the platelet count and gives relief to the patient. 
+                                        You can boil two small stems of giloy plant in a glass of water. Consume this water when it is little warm. 
+                                        You can also add few drops of giloy juice to a cup of boiled water and drink this twice a day. 
+                                        But make sure that you do not over consume giloy juice.
+
+                                        <div className="space"/>
+
+                                        <h4> Fenugreek(Methi) Leaves:</h4>
+                                        Methi leaves are useful in reducing elevated body temperature and decrease muscle pain. 
+                                        They promote sleep and allow the body to rest and heal.
+                                        Methi seeds also can be used. Just soak overnight and have on an empty stomach in the morning.
+
+                                        <div className="space"/>
+
+                                        <h4> Hydrate:</h4>
+                                        Dehydration is a common problem in dengue. Ensure that you have plenty of fluids to stay hydrated. 
+                                        This detoxifies the system and also alleviates the headaches and muscle cramps.
+                                    </p>
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                            <AccordionItem>
+                                <AccordionItemHeading>
+                                    <AccordionItemButton> Chikungunya </AccordionItemButton>
+                                </AccordionItemHeading>
+                                <AccordionItemPanel>
+                                    <p>
+                                        <h2>Chikungunya: </h2>
+                                        Chikungunya is a viral disease transmitted to humans by infected mosquitoes. 
+                                        It is caused by the chikungunya virus (CHIKV).
+                                        A CHIKV infection causes fever and severe joint pain.
+                                        Joint pain associated with chikungunya is often debilitating, and can vary in duration.
+                                        There is currently no vaccine or specific drug against the virus. 
+                                        The treatment is focused on relieving the disease symptoms.
+
+                                        <br/><br/>The disease mostly occurs in Africa, Asia and the Indian subcontinent. 
+                                        However a major outbreak in 2015 affected several countries of the Region of the Americas, and sporadic outbreaks are seen elsewhere.
+                                        The disease shares some clinical signs with dengue and Zika, and can be misdiagnosed in areas where they are common.
+                                        Severe cases and deaths from chikungunya are very rare and are almost always related to other existing health problems.
+
+                                        <br/><br/><b>Other symptoms include: </b>Muscle pain, Joint swelling, Headache, Nausea, Fatigue and Rash.
+                                    </p>
+                                    <img src={chikungunya} />
+                                    <p>
+                                        <h5 className="note">
+                                            *Please note that the following remedies are only meant to alleviate symptoms. Incase of severe symptoms, rush
+                                            to the nearest hospital for medical attention.*
+                                        </h5>
+
+                                        <div className="space"/>
+                            
+                                        <h2>Home Remedies:</h2>
+                                        <div className="space"/>
+                                        <h4> Giloy(Guduchi) juice:</h4>
+                                        Giloy juice is a well-known remedy for dengue fever. 
+                                        Giloy juice improves metabolism and builds immunity. 
+                                        Strong immunity helps in fighting dengue fever effectively. 
+                                        It helps in increasing the platelet count and gives relief to the patient. 
+                                        You can boil two small stems of giloy plant in a glass of water. Consume this water when it is little warm. 
+                                        You can also add few drops of giloy juice to a cup of boiled water and drink this twice a day. 
+                                        But make sure that you do not over consume giloy juice.
+
+                                        <div className="space"/>
+                                        
+                                        <h4> Papaya Leaves:</h4>
+                                        Papaya leaves are beneficial if you want to increase your platelet count. 
+                                        In dengue fever, the platelet count decreases and can lead to complications. 
+                                        They are rich in vitamin C and antioxidants that reduce stress on the body. 
+                                        They also reduce other symptoms like chills, body ache nausea, and fatigue. 
+                                        Crush the leave and take out the juice. About two tablespoons should be had daily.
+
+                                        <div className="space"/>
+                                        
+                                        <h4> Coconut water:</h4>
+                                        Drinking coconut water is one of the best home remedies for chikungunya treatment as it helps the patients to recover fast by detoxifying the liver. 
+                                        Drink 3-4 glasses of coconut water in a day.
+
+                                        <div className="space"/>
+                                        
+                                        <h4> Turmeric:</h4>
+                                        Curcumin in the turmeric acts as a powerful antioxidant that provides anti-inflammatory effects to help you combat the adverse effects of chikungunya. 
+                                        All you need to do is add a teaspoon turmeric to a glass of warm milk.
+
+                                        <div className="space"/>
+                                        
+                                        <h4> Cold Compress:</h4>
+                                        Most doctors prescribe a cold or ice pack for joint pains and any form of inflammation in the body. 
+                                        Ice packs are easily available at any pharmacy but in the absence of one, crushed ice in a towel can be used as well. 
+                                        This therapy can be done several times during the day until joint pain persists.
+
+                                        <div className="space"/>
+                                        
+                                        <h4> Garlic paste:</h4>
+                                        The anti-inflammatory properties of garlic provide relief from joint pains which accompany Chikungunya. 
+                                        Therefore, for chikungunya treatment home remedies, a paste made by grinding some peeled and chopped garlic pods can be applied to joints twice a day.
+                                    </p>
+
+                                </AccordionItemPanel>
+                            </AccordionItem>
+                        </Accordion>
+                    </div>
+
+                );
 
             break;
+ 
+            case ("Fever,Malaise,Pain while swallowing,Canker sores,Dehydration"):
+                setDisplay(
+                    <div className="window">
+                        <p>
+                            <h2>Hand, Foot, and Mouth Disease(HFMD): </h2>
+                            A mild, contagious viral infection common in young children — is characterized by sores in the mouth and a rash on the hands and feet. 
+                            Hand-foot-and-mouth disease is most commonly caused by a coxsackievirus. 
+                            Severe cases of hand, foot, and mouth disease (HFMD) may require medical attention, but the condition usually clears up without intervention.
+                            There is no way to treat or prevent HFMD, but it normally clears up without treatment within 7 to 14 days.
+
+                            <br/><br/>A fever and sore throat are usually the first symptoms of HFMD. 
+                            The characteristic blisters and rashes show up later, usually 1 or 2 days after the fever begins.
+                        </p>
+                        <img src={HFMD} className="HFMD"/>
+                        <p>
+                            <h2>Home Remedies:</h2>
+                            <div className="space"/>
+                            <h4> Tender Coconut Water:</h4>
+                            Coconut water cools the body and is gentle on the stomach. 
+                            It contains a wide range of vitamins, minerals, electrolytes and antioxidants. It also contains lauric acid which fights viruses. 
+                            Giving coconut water to a child with HFMD can provide him relief from the pain in his mouth and keep his body hydrated. 
+                            You can also freeze coconut water and have your child chew on the frozen cubes to reduce the pain caused by mouth sores.
+
+                            <div className="space"/>
+                            
+                            <h4> Oil Pulling:</h4>
+                            This is an old Ayurvedic method for maintaining good oral hygiene. It also helps soothe the mouth sores caused by HFMD. 
+                            Take a tablespoon of any oil such as peanut, sesame or coconut, and ask your child to swish it around in his mouth for 5 to 10 minutes and then spit it out. 
+                            Make sure that he does not swallow the oil after swishing.
+
+                            <div className="space"/>
+                            
+                            <h4> Echinacea:</h4>
+                            Echinacea is a herb that belongs to the daisy family. It has antimicrobial properties. 
+                            This herb boosts the immune system and reduces the symptoms of fever, cold, and other infections like HFMD. 
+                            Echinacea can be consumed in the form of capsules or by boiling its leaves in water to make a tea and adding honey to it.
+
+                            <div className="space"/>
+                            
+                            <h4> Salt Water Rinse and Baths:</h4>
+                            Ask your child to rinse his mouth with warm salt water three to four times a day, as it will provide him relief from painful blisters and mouth sores. 
+                            You can use common table salt for this or Himalayan pink salt. Pink salt is more effective because it balances the pH level inside the mouth. 
+                            Also, adding Epsom salts to his bath water can soothe the rashes on the body and help a child heal faster from the HFMD symptoms. 
+                            You can also add a few drops of lavender or lemon essential oil to the Epsom salt bath water which can provide your child some relief.
+
+                            <div className="space"/>
+                            
+                            <h4> Indian Lilac or Neem:</h4>
+                            Neem or Indian Lilac has several antimicrobial properties and has been used to treat viral diseases for hundreds of years. 
+                            You can apply neem oil to the rashes on your child’s body. 
+                            You can also powder dried neem leaves and make a paste of it with water. 
+                            Apply this paste to the rashes and blisters for quick healing. 
+                            You can even use neem oil combined with coconut oil and a few drops of lavender oil for topical application.
+
+                            <div className="space"/>
+                            
+                            <h4> Aloe Vera:</h4>
+                            Aloe vera has antimicrobial properties. It also increases immunity. 
+                            Aloe vera contains minerals, vitamins, and several other compounds that are beneficial for the skin. 
+                            Apply aloe vera gel to the rashes and blisters for soothing relief. 
+                            You can even give aloe vera juice to your kid to help him heal faster from HFMD.
+                        </p>
+                    </div>
+                );
+
+            break;
+
+                    
+
       
             default:
                 setDisplay( <div className="window">kaput</div>);

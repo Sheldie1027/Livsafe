@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Select from 'react-select';
 import ReactPlayer from "react-player";
+import News from './news';
 import {
     Accordion,
     AccordionItem,
@@ -778,9 +779,6 @@ function HomePage() {
 
             break;
 
-                    
-
-      
             default:
                 setDisplay( <div className="window">kaput</div>);
       
@@ -811,7 +809,10 @@ function HomePage() {
                     
                     </button>
                 </div>
-                <div >{display}</div>
+                <div >
+                    <News/>
+                    {display}
+                </div>
             </div>
         </div> 
         

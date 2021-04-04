@@ -65,9 +65,6 @@ function Login() {
             <RegisterForm />
           </animated.form>
         </div>
-        <animated.div className="forgot-panel" style={loginProps}>
-          <a herf="#">Forgot your password</a>
-        </animated.div>
       </div>
     </div>
   );

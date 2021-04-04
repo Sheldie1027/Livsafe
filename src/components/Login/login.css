@@ -6,7 +6,7 @@ html,body, body * {
     color:inherit;
     background-color:inherit;
 
-  }
+}
   
 
 .login-register-container {
@@ -23,44 +23,48 @@ html,body, body * {
 }
   
   
-  .login-register-wrapper {
-      height: 580px;
-      width: 500px;
-      margin-top: 30px;
-      margin-left: 80px;
-      margin-right: auto;
-      padding:0 3em;
-      border-radius: 5px;
-      box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
-      overflow: hidden; 
-      font-size: 1em;
-      color:#000000;
-      background: linear-gradient(180deg, rgba(10,69,18,1) 0%, rgba(85,255,35,0.8914916308320203) 71%, rgba(255,255,255,0) 95%);
-  }
+.login-register-wrapper {
+    height: 580px;
+    width: 500px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: auto;
+    padding:0 3em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+    overflow: hidden; 
+    font-size: 1em;
+    color:#000000;
+    background: linear-gradient(180deg, rgba(10,69,18,1) 0%, rgba(85,255,35,0.8914916308320203) 71%, rgba(255,255,255,0) 95%);
+}
   
-  .nav-buttons {
-    width: 100%;
-    height: 100px;
-    padding-top: 40px;
-    opacity: 1;
-    margin-bottom: 3em;
-  }
-  button {
-      font-size: 1.5em;
-      margin-right:1em;
-      border:0px;
-      cursor: pointer;
+.nav-buttons {
+    width: 100% !important;
+    height: 100px !important;
+    padding-top: 40px !important;
+    opacity: 1 !important;
+    margin-bottom: 3em !important;
+    font-size: 1.5em !important
+}
+  
+button {
+    font-size: 1em !important;
+    margin-right: 1em !important;
+    border: 0px ;
+    cursor: pointer ;
    
-  }
-  button:focus {
-      outline: 0px;
-  }
-  button.active {
-    padding-bottom: 10px;
-    border-bottom: 2.5px #0e3d14;
+}
+  
+button:focus {
+    outline: 0px;
+}
+  
+button.active {
+    padding-bottom: 10px !important;
+    border-bottom: 2.5px #0e3d14 !important;
 } 
 
-   .forgot-panel {
+.forgot-panel {
     position: fixed;
     height: 100px;
     top: 35px;
@@ -69,102 +73,113 @@ html,body, body * {
     text-align: center;
     padding-top: 40px;
         
-  }
+}
   
-    .form-group input {
-        width: 100%;
-        height: 35px;
-        padding-left: 15px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        background: rgba(255,255,255,.5);
-    }
-    .form-group label {
-      text-transform: uppercase;
-    }
-    input.submit {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1em;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        padding: 8px 0px;
-        width: 100%;
-        height: 33px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 23px;
-        background-color: rgba(35,130,48,1);
-        cursor: pointer;
-        
+.form-group input {
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    background: rgba(255,255,255,.5);
+}
     
-    }
-
-    button.submit {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1em;
-        text-align: center;
-        color: rgb(0, 0, 0);
-        padding: 8px 0px;
-        width: 100%;
-        height: 34px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 23px;
-        background-color: rgba(35,130,48,1);
-        cursor: pointer;
+.form-group label {
+    text-transform: uppercase;
+}
+    
+input.submit {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 23px;
+    background-color: rgba(35,130,48,1);
+    cursor: pointer;
         
-    }
+}
 
-    .errormsg{
-        color: #fc0000;
-        margin-top: -10px;
-        font-size: 15px;
-        font-weight: bold;
+button.submit {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 8px 0px;
+    width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 23px;
+    background-color: rgba(35,130,48,1);
+    cursor: pointer;
+        
+}
+
+.errormsg{
+    color: #fc0000;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
         
         
-    }
+}
 
-    .errormessage{
-        color: #fc0000;
-        margin-top: -10px;
-        font-size: 18px;
-        font-weight: bold;
-    }
+.errormessage{
+    color: #fc0000;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
       
-    form#registerform {
-        left:500px;
-        top:-230px;
-        position:relative;
-    }
+form#registerform {
+    left:500px;
+    top:-230px;
+    position:relative;
+}
   
-    .forgot-panel {
-        margin-top:-375px;
-        color:black;
-        font-size: 20px;
-    }
+.forgot-panel {
+    margin-top:-375px;
+    color:black;
+    font-size: 20px;
+}
   
-    form, .forgot-panel { 
-        position: relative;
-        transition: all .5s ease;
-    }
-    #loginBtn, #registerBtn {
-        transition: all .5s ease;
+form, .forgot-panel { 
+    position: relative;
+    transition: all .5s ease;
+}
+    
+#loginBtn, #registerBtn {
+    transition: all .5s ease;
   
-    }
-    .welcome{
-        position: fixed;
-        top:330px;
-        right:30px;
-        font-size: 30px;
-        color:whitesmoke;
-    }
+}
+    
+.welcome{
+    position: fixed;
+    top: 320px;
+    right: 30px ;
+    font-size: 60px !important;
+    color:whitesmoke ;
+}
+
+.welcome1{
+    position: fixed;
+    top: 400px;
+    right: 50px ;
+    font-size: 32px !important;
+    color:whitesmoke ;
+}
     
 
-    .logo{
-        position: fixed;
-        top:70px;
-        right:240px;
-    }
+.logo{
+    position: fixed;
+    top:60px;
+    right:240px;
+}

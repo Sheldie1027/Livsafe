@@ -810,7 +810,6 @@ function HomePage() {
                     </button>
                 </div>
                 <div >
-                    <News/>
                     {display}
                 </div>
             </div>

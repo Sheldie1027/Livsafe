@@ -7,11 +7,10 @@ function Intro(){
             <div className='logo'>
                 <Logo/>
             </div>
-            <div className='welcome'>
-                <h1 style={{fontFamily:'Reggae One'}}>Welcome to Livsafe!!!</h1>
-                <h4 style={{fontFamily:'Reggae One'}}>We are devoted to your health and care</h4>
-            </div>
-            
+            <div >
+                <p className='welcome' style={{fontFamily:'Reggae One'}}>Welcome to Livsafe!!!</p>
+                <p className='welcome1'style={{fontFamily:'Reggae One'}}>We are devoted to your health and care</p>
+            </div>  
         </div>
     )
 }

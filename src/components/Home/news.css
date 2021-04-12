@@ -3,3 +3,10 @@
     left: 7em;
     width: 78rem;
 }
+
+@media(max-width: 400px){
+    .card{
+        display: none;
+    }
+    
+}

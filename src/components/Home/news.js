@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Card from 'react-bootstrap/Card';
 import "./news.css";
 
-const API = 'https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=10&apiKey=36007a47cc43451b84328b430b68e9ca';
+const API = 'https://newsapi.org/v2/top-headlines?country=in&category=health&pageSize=8&apiKey=36007a47cc43451b84328b430b68e9ca';
 
 class News extends Component {
     constructor(props) {
@@ -35,9 +35,7 @@ class News extends Component {
                             <Card.Subtitle className="mb-2 text-muted">{article.source.name}</Card.Subtitle>
                             <Card.Text>{article.description}</Card.Text>
                         </Card.Body>
-                    </Card>    
-                    
-                    
+                    </Card>
                 )}
             </div>
 

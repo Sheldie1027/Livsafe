@@ -113,32 +113,32 @@ function HomePage() {
                             </AccordionItemHeading >
                             <AccordionItemPanel>
                                 <p>
-                                    <h2>Common Cold:</h2>
+                                    <span className="DT">Common Cold:</span>
                                     A common viral infection of the nose and throat.In contrast to the flu, a common cold can be caused by many different types of viruses. 
                                     The condition is generally harmless and symptoms usually resolve within two weeks.
                                 </p>
                                 <img src={cold} />
                                 <p>
-                                    <h2>Home Remedies:</h2>
+                                    <span className="HR">Home Remedies:</span>
                                     <div className="space"/>
-                                    <h4>Warm baths:</h4> You can reduce a child’s fever by giving them a warm sponge bath. 
+                                    <span className="RT">Warm baths:</span> You can reduce a child’s fever by giving them a warm sponge bath. 
                                     Warm baths can also reduce cold and flu symptoms in adults. 
                                     Adding Epsom salt and baking soda to the water can reduce body aches.
                                     Adding a few drops of essential oil, such as tea tree, juniper, rosemary, thyme, orange, lavender, or eucalyptus, may also have a soothing effect.
                         
                                     <div className="space"/>
                         
-                                    <h4>Ginger:</h4>A few slices of raw ginger root in boiling water may help soothe a cough or sore throat. 
+                                    <span className="RT">Ginger:</span>A few slices of raw ginger root in boiling water may help soothe a cough or sore throat. 
                                     Research suggests that it can also ward off the feelings of nausea that so often accompany influenza.
 
                                     <div className="space"/>
 
-                                    <h4>Honey:</h4>Drinking honey in tea with lemon can ease sore throat pain. 
+                                    <span className="RT">Honey:</span>Drinking honey in tea with lemon can ease sore throat pain. 
                                     Research suggests that honey is an effective cough suppressant, too.
 
                                     <div className="space"/>
 
-                                    <h4>Salt water:</h4>Gargling with salt water reduces and loosens mucus, which contains bacteria and allergens.
+                                    <span className="RT">Salt water:</span>Gargling with salt water reduces and loosens mucus, which contains bacteria and allergens.
                                     To try this remedy at home, dissolve 1 teaspoon of salt in a full glass of water.
                                     Swish it around your mouth and throat. Then spit it out.
                                 </p>
@@ -150,7 +150,7 @@ function HomePage() {
                             </AccordionItemHeading>
                             <AccordionItemPanel>
                                 <p>
-                                <h2>COVID-19 (Coronavirus):</h2>
+                                <span className="DT">COVID-19 (Coronavirus):</span>
                                 Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
                                 Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  
                                 Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
@@ -177,22 +177,22 @@ function HomePage() {
                                 </p>
                                 <img src={covid} />
                                 <p>
-                                    <h5 className="note">
+                                    <span className="note">
                                         *Please note that the following remedies are only meant to alleviate mild to moderate symptoms. 
                                         In case of serious symptoms, kindly contact your doctor immediately and maintain social-distancing*
-                                    </h5>
+                                    </span>
                                     <div className="space"/>
                                     
-                                    <h2>Home Remedies:</h2>
+                                    <span className="HR">Home Remedies:</span>
                                     <div className="space"/>
-                                    <h4>Stay hydrated:</h4>
+                                    <span className="RT">Stay hydrated:</span>
                                     Fevers usually cause sweating, which means loss of water from your body. 
                                     Drink lots of fluids (preferably water or juice and not soda or high sugar beverages that might make you thirstier). 
                                     Caffeinated beverages are not recommended.
 
                                     <div className="space"/>
 
-                                    <h4>Rest:</h4>
+                                    <span className="RT">Rest:</span>
                                     Sleep has a huge effect on your body’s ability to rest and recover and it is a vital part of our daily routine. 
                                     When you’re asleep the body appears rested and relaxed, but it’s actually doing a lot of physical activity to revitalise and repair. 
                                     The recommended amount of sleep for adults is 7-9 hours a night.When you’re ill, getting enough time for resting and repairing is crucial for making a speedy recovery. 
@@ -200,14 +200,14 @@ function HomePage() {
 
                                     <div className="space"/>
 
-                                    <h4>Drink warm beverages, like tea or broth:</h4>
+                                    <span className="RT">Drink warm beverages, like tea or broth:</span>
                                     These heat up the airways, keep you hydrated and break up any mucus you might have in your throat and upper airway. 
                                     Drinking warm beverages or soups may help mucous move more quickly. 
                                     This means that drinking warm beverages may encourage coughing and nose-blowing to be more productive.
 
                                     <div className="space"/>
 
-                                    <h4>Steam:</h4>
+                                    <span className="RT">Steam:</span>
                                     Steam helps break up mucus so you can expel it more easily. The easiest way to use steam is in the bath or shower. 
                                     Make your shower as hot as you can handle, step in, then breathe deeply through your mouth and nose.
                                     The hot water will also help relax muscles that may be tense from coughing. 
@@ -220,7 +220,7 @@ function HomePage() {
 
                                     <div className="space"/>
 
-                                    <h4>Coconut oil pulling:</h4>
+                                    <span className="RT">Coconut oil pulling:</span>
                                     Coconut oil pulling can be one home remedy you can try to lessen your pain and deal with the problem of a sore throat. 
                                     Coconut oil helps in quashing out the toxins and the germs strengthen immunity as well as clears out nasal passages. 
                                     Coconut oil is also very soothing on the throat and carries zero side-effects. 
@@ -228,7 +228,7 @@ function HomePage() {
 
                                     <div className="space"/>
 
-                                    <h4>Home-made Lozenges:</h4>
+                                    <span className="RT">Home-made Lozenges:</span>
                                     To treat a sore throat , you could suck on a lozenge. This helps in thinning mucous and relieving the sore throat.
                                     To make lozenges at home , you could use the following recipe.
 
@@ -261,7 +261,7 @@ function HomePage() {
                 setDisplay( 
                 <div className="window">
                     <p>
-                        <h2>Migraine:</h2>
+                        <span className="DT">Migraine:</span>
                         A migraine can cause severe throbbing pain or a pulsing sensation, usually on one side of the head.
                         It's often accompanied by nausea, vomiting, and extreme sensitivity to light and sound.
                         Migraine attacks can last for hours to days, and the pain can be so severe that it interferes with your daily activities.
@@ -270,16 +270,16 @@ function HomePage() {
                     </p>
                     <img src={migraine} />
                     <p>
-                        <h2>Home Remedies:</h2>
+                        <span className="HR">Home Remedies:</span>
                         <div className="space"/>
-                        <h4>Cool It Down:</h4>
+                        <span className="RT">Cool It Down:</span>
                         Put an ice pack on your forehead, scalp, or neck to get pain relief.
                         Experts aren't sure exactly why it works, but reducing the flow of blood might be part of it.
                         You can also try a frozen gel pack or a wash cloth that's been rinsed in cold water.
 
                         <div className="space"/>
 
-                        <h4>A Dark, Quiet Room:</h4>
+                        <span className="RT">A Dark, Quiet Room:</span>
                         Bright light and loud noises can make your headache worse. 
                         So find a spot away from the action and pull down the shades when you've got a migraine. 
                         It can help speed up your recovery.
@@ -287,14 +287,14 @@ function HomePage() {
                         <div className="space"/>
 
 
-                        <h4>Mute the Noise:</h4>
+                        <span className="RT">Mute the Noise:</span>
                         Migraine can be triggered by just about any of your senses, including your hearing. 
                         Just like lights, loud noise can set off your migraine. Get to a quiet space when it hits. 
                         If you can’t, carry earplugs to block out the surrounding noise on the spot.
 
                         <div className="space"/>
 
-                        <h4>Acupressure:</h4>
+                        <span className="RT">Acupressure:</span>
                         <img src={accupressure} className="Accu"/>
                         <p className="text">Acupressure involves the application of pressure to specific parts of the body. 
                         Stimulating specific points of the body in this way is believed to release muscle tension and alleviate pain.
@@ -311,7 +311,7 @@ function HomePage() {
                 setDisplay(
                 <div className="window">
                     <p>
-                        <h2>Conjunctivitis (Pink Eye):</h2>
+                        <span className="DT">Conjunctivitis (Pink Eye):</span>
                         Conjunctivitis, or pink eye, is an irritation or inflammation of the conjunctiva, which covers the white part of the eyeball. 
                         It can be caused by allergies or a bacterial or viral infection. 
                         Conjunctivitis can be extremely contagious and is spread by contact with eye secretions from someone who is infected.Symptoms include redness, itching and tearing of the eyes. 
@@ -323,16 +323,16 @@ function HomePage() {
                     <img src={conjunctivitis} />
                     <p>
 
-                        <h5 className="note">
+                        <span className="note">
                             *Please note that the following remedies are only meant to alleviate symptoms. To treat conjunctivitis,
                             you need to get prescribed medication through an ophthalmologist.*
-                        </h5>
+                        </span>
 
                         <div className="space"/>
 
-                        <h2>Home Remedies:</h2>
+                        <span className="HR">Home Remedies:</span>
                         <div className="space"/>
-                        <h4>Use a cool/warm compress:</h4>
+                        <span className="RT">Use a cool/warm compress:</span>
                         Pinkeye causes inflammation around the eye that can be irritating and even painful. 
                         Using a cool and damp compress will help reduce inflammation and soothe the eye.
                         <br/><br/>How to use a compress for pinkeye:
@@ -345,7 +345,7 @@ function HomePage() {
 
                         <div className="space"/>
 
-                        <h4>Damp cloth clean:</h4>
+                        <span className="RT">Damp cloth clean:</span>
                         People who have bacterial pinkeye might notice a thick discharge, or pus, leaking from the eye that it is affecting. 
                         Pus dries quickly, forming a crust along the edges of the eyelids. 
                         People may have difficulty opening their eye, especially in the morning after the pus has had time to sit and harden overnight. 
@@ -353,7 +353,7 @@ function HomePage() {
 
                         <div className="space"/>
 
-                        <h4>Tea bags:</h4>
+                        <span className="RT">Tea bags:</span>
                         Placing cooled tea bags on your eyes while they’re closed can be a way to relax and unwind.
                         Some types of tea have anti-inflammatory, soothing properties. Studies have suggested that green tea, chamomile, rooibos, and black tea all have anti-inflammatory properties. 
                         Because of this, using tea bags on your eyes could be an effective way to reduce swelling.
@@ -368,7 +368,7 @@ function HomePage() {
                 setDisplay(
                 <div className="window">
                     <p>
-                    <h2>Diarrhea:</h2>
+                    <span className="DT">Diarrhea:</span>
                     Diarrhea is characterized by loose, watery stools or a frequent need to have a bowel movement. 
                     It usually lasts a few days and often disappears without any treatment. Diarrhea can be acute or chronic.
 
@@ -381,9 +381,9 @@ function HomePage() {
                     </p>
                     <img src={diarrhea} />
                     <p>
-                        <h2>Home Remedies:</h2>
+                        <span className="HR">Home Remedies:</span>
                         <div className="space"/>
-                        <h4>Rehydrating:</h4>
+                        <span className="RT">Rehydrating:</span>
                         Hydrating the body is essential to recovering from diarrhea.Diarrhea causes a deficit of fluids, including water. 
                         This causes the body to lose electrolytes such as sodium and chloride.To support recovery, it is vital to restore fluids. 
                         Otherwise, a person may become dehydrated. <br/><br/>Drinking water is the first step to rehydrating. 
@@ -398,7 +398,7 @@ function HomePage() {
 
                         <div className="space"/>
 
-                        <h4>BRAT diet:</h4>
+                        <span className="RT">BRAT diet:</span>
                         BRAT stands for Bananas, Rice, Applesauce, and Toast. 
                         These foods are all starchy, so they can help bind foods together to make stools firmer. 
                         This may decrease the number of stools a person passes and help ease their diarrhea. 
@@ -408,14 +408,14 @@ function HomePage() {
 
                         <div className="space"/>
 
-                        <h4>Coconut water:</h4>
+                        <span className="RT">Coconut water:</span>
                         Coconut water contains high levels of potassium and magnesium. These nutrients help to reduce pain, muscle spasms, and cramps. 
                         Coconut water is also useful for rehydrating and is a better option than most sports drinks as it is also low in calories, sugar, and acidity. 
                         Slowly sipping on up to 2 glasses of coconut water every 4–6 hours could ease upset stomach symptoms.
 
                         <div className="space"/>
 
-                        <h4>Taking probiotics:</h4>
+                        <span className="RT">Taking probiotics:</span>
                         Probiotics are microorganisms that can benefit the digestive system. 
                         They can support the workings of the gut and help fight off infection. 
                         Probiotics are live bacteria and yeasts in some yogurts and other fermented foods.
@@ -435,7 +435,7 @@ function HomePage() {
                 setDisplay(
                     <div className="window">
                         <p>
-                            <h2>Constipation:</h2>
+                            <span className="DT">Constipation:</span>
                             Constipation occurs when bowel movements become less frequent and stools become difficult to pass. 
                             It happens most often due to changes in diet or routine, or due to inadequate intake of fiber.
                             Having fewer than three bowel movements a week is, technically, the definition of constipation. 
@@ -445,9 +445,9 @@ function HomePage() {
                         </p>
                         <img src={constipation} />
                         <p>
-                            <h2>Home Remedies:</h2>
+                            <span className="HR">Home Remedies:</span>
                             <div className="space"/>
-                            <h4>Drink more water:</h4>
+                            <span className="RT">Drink more water:</span>
                             Drinking enough fluids can also help prevent and treat constipation. 
                             It can help move food through your digestive system and stop stool from hardening. 
                             In general, you should aim to drink about nine cups of liquid a day if you’re a woman and 13 cups if you’re a man. 
@@ -455,7 +455,7 @@ function HomePage() {
 
                             <div className="space"/>
 
-                            <h4>Have enough dietary fibre:</h4>
+                            <span className="RT">Have enough dietary fibre:</span>
                             Including dietary fibre in your diet is believed to be the best remedy for constipation. 
                             This is because increasing fiber intake increases the bulk and consistency of bowel movements, making them easier to pass. 
                             It also helps them pass through the digestive system more quickly. 
@@ -466,14 +466,14 @@ function HomePage() {
 
                             <div className="space"/>
 
-                            <h4>Anjeer:</h4>
+                            <span className="RT">Anjeer:</span>
                             Also known as figs, anjeer can offer instant constipation relief when soaked in warm water. 
                             It has a high fibre-content and is highly recommended as well. Anjeer is known to be the best home remedy for constipation in kids. 
                             Also, you can include it in your daily diet in order to improve your digestive system.
 
                             <div className="space"/>
 
-                            <h4>Milk and Ghee:</h4>
+                            <span className="RT">Milk and Ghee:</span>
                             We have long-known about the benefits that milk and ghee have to offer. 
                             However, they are also effective home remedies for constipation. 
                             You can take 1 or 2 teaspoons of ghee in a hot cup of milk and have it during bedtime. 
@@ -481,7 +481,7 @@ function HomePage() {
 
                             <div className="space"/>
 
-                            <h4>Lemon water:</h4>
+                            <span className="RT">Lemon water:</span>
                             Lemon juice contains citric acid that helps stimulate your digestive system and can flush out the toxins from your body as well. 
                             It proves to be very helpful and acts as a natural constipation relief. 
                             You can take a glass of water and squeeze fresh lemon juice into it every morning. 
@@ -489,7 +489,7 @@ function HomePage() {
 
                             <div className="space"/>
 
-                            <h4>Ginger tea:</h4>
+                            <span className="RT">Ginger tea:</span>
                             Yes, your “adhrak wali chai” is also one of the ideal home remedies to cure constipation. 
                             Ginger is known to be a herb that causes the inside of your body to generate more heat. 
                             The hot water in your ginger tea also helps stimulate digestion and it may offer instant constipation relief as well.
@@ -504,7 +504,7 @@ function HomePage() {
                 setDisplay(
                     <div className="window">
                         <p>
-                            <h2>Keratitis (Corneal Inflammation):</h2>
+                            <span className="DT">Keratitis (Corneal Inflammation):</span>
                             Keratitis is an inflammation of the cornea — the clear, dome-shaped tissue on the front of your eye that covers the pupil and iris. 
                             Keratitis may or may not be associated with an infection. 
                             Non-infectious keratitis can be caused by a relatively minor injury, by wearing your contact lenses too long or by a foreign body in the eye. 
@@ -518,30 +518,30 @@ function HomePage() {
                         </p>
                         <img src={keratitis} />
                         <p>
-                            <h5 className="note">
+                            <span className="note">
                                 *Please note that the following remedies are only meant to alleviate symptoms. To treat keratitis,
                                 you need to get prescribed medication through an ophthalmologist.*
-                            </h5>
+                            </span>
 
                             <div className="space"/>
 
-                            <h2>Home Remedies:</h2>
+                            <span className="HR">Home Remedies:</span>
                             <div className="space"/>
-                            <h4>Warm compress:</h4>
+                            <span className="RT">Warm compress:</span>
                             Warm compress helps to soothe infected, irritated and sore eyes.
                             Soak a cloth in warm water and gently press it to your eye for 2-3 minutes, repeat this several times in a day to soothe eye irritation. 
                             Always use a clean cloth and make sure that water is not too hot, so you don’t burn yourself.
 
                             <div className="space"/>
 
-                            <h4>Cold compress:</h4>
+                            <span className="RT">Cold compress:</span>
                             Like warm compresses, cold compresses don’t exactly cure eye infections. 
                             They can, however, ease the discomfort associated with certain eye diseases. 
                             Cold compresses can reduce swelling in the case of eye injuries and infections.
                             
                             <div className="space"/>
 
-                            <h4>Tea bags:</h4>
+                            <span className="RT">Tea bags:</span>
                             Placing cooled tea bags on your eyes while they’re closed can be a way to relax and unwind.
                             Some types of tea have anti-inflammatory, soothing properties. Studies have suggested that green tea, chamomile, rooibos, and black tea all have anti-inflammatory properties. 
                             Because of this, using tea bags on your eyes could be an effective way to reduce swelling.
@@ -562,7 +562,7 @@ function HomePage() {
                                 </AccordionItemHeading >
                                 <AccordionItemPanel>
                                     <p>
-                                        <h2>Dengue Fever</h2>
+                                        <span className="DT">Dengue Fever</span>
                                         Dengue is a mosquito-borne viral infection.
                                         The virus responsible for causing dengue, is called dengue virus (DENV). 
                                         There are four DENV serotypes, meaning that it is possible to be infected four times.
@@ -579,16 +579,16 @@ function HomePage() {
                                     </p>
                                     <img src={dengue} className="dengue"/>
                                     <p>
-                                        <h5 className="note">
+                                        <span className="note">
                                         *Please note that the following remedies are only meant to alleviate symptoms. Incase of Severe Dengue, rush
                                         to the nearest hospital for medical attention.*
-                                        </h5>
+                                        </span>
 
                                         <div className="space"/>
                             
-                                        <h2>Home Remedies:</h2>
+                                        <span className="HR">Home Remedies:</span>
                                         <div className="space"/>
-                                        <h4>Papaya Leaves:</h4>
+                                        <span className="RT">Papaya Leaves:</span>
                                         Papaya leaves are beneficial if you want to increase your platelet count. 
                                         In dengue fever, the platelet count decreases and can lead to complications. 
                                         They are rich in vitamin C and antioxidants that reduce stress on the body. 
@@ -597,13 +597,13 @@ function HomePage() {
 
                                         <div className="space"/>
                             
-                                        <h4>Orange Juice:</h4>
+                                        <span className="RT">Orange Juice:</span>
                                         Citrus fruits are very beneficial when suffering from dengue fever. 
                                         Vitamin C present in these fruits, especially organges and orange juice, helps improve immunity, detoxifies the body, initiates cell repair, and combats infections.
 
                                         <div className="space"/>
 
-                                        <h4> Giloy(Guduchi) juice:</h4>
+                                        <span className="RT"> Giloy(Guduchi) juice:</span>
                                         Giloy juice is a well-known remedy for dengue fever. 
                                         Giloy juice improves metabolism and builds immunity. 
                                         Strong immunity helps in fighting dengue fever effectively. 
@@ -614,14 +614,14 @@ function HomePage() {
 
                                         <div className="space"/>
 
-                                        <h4> Fenugreek(Methi) Leaves:</h4>
+                                        <span className="RT"> Fenugreek(Methi) Leaves:</span>
                                         Methi leaves are useful in reducing elevated body temperature and decrease muscle pain. 
                                         They promote sleep and allow the body to rest and heal.
                                         Methi seeds also can be used. Just soak overnight and have on an empty stomach in the morning.
 
                                         <div className="space"/>
 
-                                        <h4> Hydrate:</h4>
+                                        <span className="RT"> Hydrate:</span>
                                         Dehydration is a common problem in dengue. Ensure that you have plenty of fluids to stay hydrated. 
                                         This detoxifies the system and also alleviates the headaches and muscle cramps.
                                     </p>
@@ -633,7 +633,7 @@ function HomePage() {
                                 </AccordionItemHeading>
                                 <AccordionItemPanel>
                                     <p>
-                                        <h2>Chikungunya: </h2>
+                                        <span className="DT">Chikungunya: </span>
                                         Chikungunya is a viral disease transmitted to humans by infected mosquitoes. 
                                         It is caused by the chikungunya virus (CHIKV).
                                         A CHIKV infection causes fever and severe joint pain.
@@ -650,16 +650,16 @@ function HomePage() {
                                     </p>
                                     <img src={chikungunya} />
                                     <p>
-                                        <h5 className="note">
+                                        <span className="note">
                                             *Please note that the following remedies are only meant to alleviate symptoms. Incase of severe symptoms, rush
                                             to the nearest hospital for medical attention.*
-                                        </h5>
+                                        </span>
 
                                         <div className="space"/>
                             
-                                        <h2>Home Remedies:</h2>
+                                        <span className="HR">Home Remedies:</span>
                                         <div className="space"/>
-                                        <h4> Giloy(Guduchi) juice:</h4>
+                                        <span className="RT"> Giloy(Guduchi) juice:</span>
                                         Giloy juice is a well-known remedy for dengue fever. 
                                         Giloy juice improves metabolism and builds immunity. 
                                         Strong immunity helps in fighting dengue fever effectively. 
@@ -670,7 +670,7 @@ function HomePage() {
 
                                         <div className="space"/>
                                         
-                                        <h4> Papaya Leaves:</h4>
+                                        <span className="RT"> Papaya Leaves:</span>
                                         Papaya leaves are beneficial if you want to increase your platelet count. 
                                         In dengue fever, the platelet count decreases and can lead to complications. 
                                         They are rich in vitamin C and antioxidants that reduce stress on the body. 
@@ -679,26 +679,26 @@ function HomePage() {
 
                                         <div className="space"/>
                                         
-                                        <h4> Coconut water:</h4>
+                                        <span className="RT"> Coconut water:</span>
                                         Drinking coconut water is one of the best home remedies for chikungunya treatment as it helps the patients to recover fast by detoxifying the liver. 
                                         Drink 3-4 glasses of coconut water in a day.
 
                                         <div className="space"/>
                                         
-                                        <h4> Turmeric:</h4>
+                                        <span className="RT"> Turmeric:</span>
                                         Curcumin in the turmeric acts as a powerful antioxidant that provides anti-inflammatory effects to help you combat the adverse effects of chikungunya. 
                                         All you need to do is add a teaspoon turmeric to a glass of warm milk.
 
                                         <div className="space"/>
                                         
-                                        <h4> Cold Compress:</h4>
+                                        <span className="RT"> Cold Compress:</span>
                                         Most doctors prescribe a cold or ice pack for joint pains and any form of inflammation in the body. 
                                         Ice packs are easily available at any pharmacy but in the absence of one, crushed ice in a towel can be used as well. 
                                         This therapy can be done several times during the day until joint pain persists.
 
                                         <div className="space"/>
                                         
-                                        <h4> Garlic paste:</h4>
+                                        <span className="RT"> Garlic paste:</span>
                                         The anti-inflammatory properties of garlic provide relief from joint pains which accompany Chikungunya. 
                                         Therefore, for chikungunya treatment home remedies, a paste made by grinding some peeled and chopped garlic pods can be applied to joints twice a day.
                                     </p>
@@ -716,7 +716,7 @@ function HomePage() {
                 setDisplay(
                     <div className="window">
                         <p>
-                            <h2>Hand, Foot, and Mouth Disease(HFMD): </h2>
+                            <span className="DT">Hand, Foot, and Mouth Disease(HFMD): </span>
                             A mild, contagious viral infection common in young children — is characterized by sores in the mouth and a rash on the hands and feet. 
                             Hand-foot-and-mouth disease is most commonly caused by a coxsackievirus. 
                             Severe cases of hand, foot, and mouth disease (HFMD) may require medical attention, but the condition usually clears up without intervention.
@@ -727,9 +727,9 @@ function HomePage() {
                         </p>
                         <img src={HFMD} className="HFMD"/>
                         <p>
-                            <h2>Home Remedies:</h2>
+                            <span className="HR">Home Remedies:</span>
                             <div className="space"/>
-                            <h4> Tender Coconut Water:</h4>
+                            <span className="RT"> Tender Coconut Water:</span>
                             Coconut water cools the body and is gentle on the stomach. 
                             It contains a wide range of vitamins, minerals, electrolytes and antioxidants. It also contains lauric acid which fights viruses. 
                             Giving coconut water to a child with HFMD can provide him relief from the pain in his mouth and keep his body hydrated. 
@@ -737,21 +737,21 @@ function HomePage() {
 
                             <div className="space"/>
                             
-                            <h4> Oil Pulling:</h4>
+                            <span className="RT"> Oil Pulling:</span>
                             This is an old Ayurvedic method for maintaining good oral hygiene. It also helps soothe the mouth sores caused by HFMD. 
                             Take a tablespoon of any oil such as peanut, sesame or coconut, and ask your child to swish it around in his mouth for 5 to 10 minutes and then spit it out. 
                             Make sure that he does not swallow the oil after swishing.
 
                             <div className="space"/>
                             
-                            <h4> Echinacea:</h4>
+                            <span className="RT"> Echinacea:</span>
                             Echinacea is a herb that belongs to the daisy family. It has antimicrobial properties. 
                             This herb boosts the immune system and reduces the symptoms of fever, cold, and other infections like HFMD. 
                             Echinacea can be consumed in the form of capsules or by boiling its leaves in water to make a tea and adding honey to it.
 
                             <div className="space"/>
                             
-                            <h4> Salt Water Rinse and Baths:</h4>
+                            <span className="RT"> Salt Water Rinse and Baths:</span>
                             Ask your child to rinse his mouth with warm salt water three to four times a day, as it will provide him relief from painful blisters and mouth sores. 
                             You can use common table salt for this or Himalayan pink salt. Pink salt is more effective because it balances the pH level inside the mouth. 
                             Also, adding Epsom salts to his bath water can soothe the rashes on the body and help a child heal faster from the HFMD symptoms. 
@@ -759,7 +759,7 @@ function HomePage() {
 
                             <div className="space"/>
                             
-                            <h4> Indian Lilac or Neem:</h4>
+                            <span className="RT"> Indian Lilac or Neem:</span>
                             Neem or Indian Lilac has several antimicrobial properties and has been used to treat viral diseases for hundreds of years. 
                             You can apply neem oil to the rashes on your child’s body. 
                             You can also powder dried neem leaves and make a paste of it with water. 
@@ -768,7 +768,7 @@ function HomePage() {
 
                             <div className="space"/>
                             
-                            <h4> Aloe Vera:</h4>
+                            <span className="RT"> Aloe Vera:</span>
                             Aloe vera has antimicrobial properties. It also increases immunity. 
                             Aloe vera contains minerals, vitamins, and several other compounds that are beneficial for the skin. 
                             Apply aloe vera gel to the rashes and blisters for soothing relief. 
@@ -792,24 +792,21 @@ function HomePage() {
                 <div>
                     <Navbar/>
                 </div >
-                
                 <Select 
                 isMulti 
                 options={data} 
                 className="dropdown" 
                 onChange={Diagnose} 
                 placeholder="Select minimum 3 Symptoms"/>
-                
                 <div className="search">
                     <button 
                     type="button" 
-                    onClick={() => Display(Value)}>
-                        
+                    onClick={() => Display(Value)}> 
                         Search 
-                    
                     </button>
                 </div>
                 <div >
+                    <News/>
                     {display}
                 </div>
             </div>

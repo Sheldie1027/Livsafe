@@ -1,6 +1,6 @@
 
 body {
-	background: linear-gradient(-45deg, #ec8a6c, #df6593, #23a6d5, #23d5ab, #4fdd33);
+	background: linear-gradient(-45deg, #ec8a6c, #da7a9e, #83d8f7, #71eeba, #fdf032, #6df145);
 	background-size: 5000% 5000%;
 	animation: gradient 10s ease infinite;
 }
@@ -87,8 +87,24 @@ p.text{
     margin-top: 1%;
 }
 
-h5.note{
+span.note{
     color:red;
+    font-size: 0.85em;
+}
+
+span.DT{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+span.HR{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+span.RT{
+    font-size: 1.17em;
+    font-weight: bolder;
 }
 
 .video {
@@ -112,4 +128,34 @@ h5.note{
 
 .search button:hover{
     background-color: rgb(138, 216, 247);
+}
+
+
+@media(max-width: 400px){
+    .dropdown{
+        left: 110px;
+        width: 1100px;
+        margin-top: 200px;
+        font-size: 3.5rem;
+    }
+
+    .search button{
+        position:absolute;
+        font-size: 10vw;
+        right: -1030px;
+        margin-top: 309px;
+        height: 95px;
+        width: 170px;
+    }
+
+    .window{
+        top: 580px;
+        width: 80rem;
+        left: 94px;
+        font-size: 3.5rem;
+    }
+
+    span.note{
+        font-size: 0.7em;
+    }
 }

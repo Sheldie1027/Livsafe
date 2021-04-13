@@ -1,6 +1,6 @@
 
 body {
-	background: linear-gradient(-45deg, #ec8a6c, #da7a9e, #83d8f7, #71eeba, #fdf032, #6df145);
+	background: linear-gradient(-45deg, #dc2f02, #e85d04, #f48c06, #faa307, #ffba08 );
 	background-size: 5000% 5000%;
 	animation: gradient 10s ease infinite;
 }
@@ -115,20 +115,30 @@ span.RT{
 }
 
 .search button {
-    background: #d4d3d3;
     position:absolute;
     right:105px;
-    top:87px;
-    border-radius: 20px;
-    font-size: 20px;
-    width: 100px;
-    height: 30px;
-    margin-top: 23px;
+    top:104px;
+    box-shadow:inset 0px 1px 3px 0px #3dc21b;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:5px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:2em;
+	font-weight:bold;
+	padding:8px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2f6627;
 }
 
 .search button:hover{
-    background-color: rgb(138, 216, 247);
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
 }
+
 
 
 @media(max-width: 400px){
@@ -140,10 +150,10 @@ span.RT{
     }
 
     .search button{
-        position:absolute;
-        font-size: 10vw;
+        position: absolute;
+        font-size: 2em;
         right: -1030px;
-        margin-top: 309px;
+        margin-top: 300px;
         height: 95px;
         width: 170px;
     }

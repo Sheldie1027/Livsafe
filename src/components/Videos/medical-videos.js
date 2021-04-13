@@ -11,28 +11,28 @@ function Medicalvideos() {
       <div><Navbar/></div>
       <div className="flexbox-container">
         <div className="flexbox-item flexbox1">
-          <h2 >How to perfrom CPR!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=hizBdM1Ob68' controls="true"/>
+          <span className="VT">How to perform CPR!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=hizBdM1Ob68' controls="true" height="88%" width="100%"/>
         </div>
         <div className="flexbox-item flexbox2">
-          <h2>How to help a Choking Adult or Child!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=QtqLAS5rgGQ' controls="true"/>
+          <span className="VT">How to help a Choking Adult or Child!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=QtqLAS5rgGQ' controls="true" height="88%" width="100%"/>
         </div>
         <div className="flexbox-item flexbox3">
-          <h2>How to treat a Burn!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=O1kiguGUt3o' controls="true"/>
+          <span className="VT">How to treat a Burn!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=O1kiguGUt3o' controls="true" height="88%" width="100%"/>
         </div>
         <div className="flexbox-item flexbox4">
-          <h2>Symptoms and First Aid for Heart Attack!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=5x0fVTwsrrQ' controls="true"/>
+          <span className="VT">Symptoms and First Aid for Heart Attack!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=5x0fVTwsrrQ' controls="true" height="88%" width="100%"/>
         </div>
         <div className="flexbox-item flexbox5">
-          <h2>What to do in case of Seizure!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=jJWfHHqfSbk' controls="true"/>
+          <span className="VT">What to do in case of Seizure!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=jJWfHHqfSbk' controls="true" height="88%" width="100%"/>
         </div>
         <div className="flexbox-item flexbox6">
-          <h2>How To Treat A Fracture & Fracture Types!!</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=2v8vlXgGXwE' controls="true"/>
+          <span className="VT">How To Treat A Fracture & Fracture Types!!</span>
+          <ReactPlayer url='https://www.youtube.com/watch?v=2v8vlXgGXwE' controls="true" height="88%" width="100%"/>
         </div>
       </div>
     </div>
